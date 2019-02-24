@@ -11,46 +11,48 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/slideout.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 </head>
-<body>
+<body class="drawer drawer--left">
 
 <!-- Side Nav -->
-<nav id="menu" class="menu slideout-menu slideout-menu-left">
-    <ul>
+<header role="banner">
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+            <li><a class="drawer-brand" href="#">Brand</a></li>
+            <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+            <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<nav class="navbar navbar-fixed">
+    <i class="display-only-small fas fa-bars toggle-button" style="position: absolute;"
+       onclick="$('.drawer').drawer('open');"></i>
+    <a class="navbar-name" href="/">엔로그</a>
+    <ul class="content hide-text-on-small" style="padding: 0">
         <li class="navbar-link"><a href="">Posts</a></li>
         <li class="navbar-link"><a href="">Blog</a></li>
     </ul>
-
+    <span class="display-only-small" style="padding: 0"></span>
 </nav>
 
-<main id="panel" class="panel slideout-panel slideout-panel-left">
-    <nav class="navbar navbar-fixed">
-        <i class="display-only-small fas fa-bars toggle-button" style="position: absolute;"></i>
-        <a class="navbar-name" href="/">엔로그</a>
-        <ul class="content hide-text-on-small" style="padding: 0">
-            <li class="navbar-link"><a href="">Posts</a></li>
-            <li class="navbar-link"><a href="">Blog</a></li>
-        </ul>
-        <span class="display-only-small" style="padding: 0"></span>
-    </nav>
-    <div class="content" style="height: 1000px;">
-        dadfa
-    </div>
-</main>
+<div class="content" style="height: 1000px;">
+    dadfa
+</div>
 
+<!-- Side Nav -->
 <script>
-    var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 100
-    });
-
-    // Toggle button
-    document.querySelector('.toggle-button').addEventListener('click', function () {
-        slideout.toggle();
-    });
+    $(document).ready(function () {
+    $('.drawer').drawer();
+});
 </script>
 </body>
 </html>
