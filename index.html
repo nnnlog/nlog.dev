@@ -20,38 +20,49 @@
 </head>
 <body class="drawer drawer--left">
 
-<!-- Side Nav -->
-<header role="banner">
-    <nav class="drawer-nav" role="navigation">
-        <ul class="drawer-menu">
-            <li><a class="drawer-brand" href="#">Brand</a></li>
-            <li><a class="drawer-menu-item" href="#">Nav1</a></li>
-            <li><a class="drawer-menu-item" href="#">Nav2</a></li>
-        </ul>
-    </nav>
-</header>
-
-
 <nav class="navbar navbar-fixed">
     <i class="display-only-small fas fa-bars toggle-button" style="position: absolute;"
        onclick="$('.drawer').drawer('open');"></i>
     <a class="navbar-name" href="/">엔로그</a>
     <ul class="content hide-text-on-small" style="padding: 0">
-        <li class="navbar-link"><a href="">Posts</a></li>
-        <li class="navbar-link"><a href="">Blog</a></li>
+        <li class="navbar-link"><a href="/posts/">Posts</a></li>
+        <li class="navbar-link"><a href="http://pmmp.me/" target="_blank">NAVER Blog</a></li>
     </ul>
     <span class="display-only-small" style="padding: 0"></span>
 </nav>
 
-<div class="content" style="height: 1000px;">
-    dadfa
+<!-- Side Nav -->
+<header role="banner">
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu" style="padding: 10px 20px;">
+            <li><a class="drawer-brand" href="#">MENU</a></li>
+            <li style="margin-top: 40px;"><a class="drawer-menu-item" href="/posts/">Posts</a></li>
+            <li><a class="drawer-menu-item" href="http://pmmp.me/" target="_blank">NAVER Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div style="height: 100px;"></div>
+
+<div class="container">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <span class="profile-card">
+            <img class="profile-card-header" alt="TEST" src="/images/logo.png">
+            <span>
+                와 개꿀!
+            </span>
+        </span>
+        <span class="profile-boxes">
+            <span class="profile-intro-box"></span>
+        </span>
+    </div>
 </div>
 
 <!-- Side Nav -->
 <script>
     $(document).ready(function () {
-    $('.drawer').drawer();
-});
+        $('.drawer').drawer();
+    });
 </script>
 </body>
 </html>

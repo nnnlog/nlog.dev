@@ -48,13 +48,69 @@ nav.navbar > * {
     transition: 1000ms background-color;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile-card {
+    display: inline-block;
+
+    width: 100%;
+    height: 80vh;
+    line-break: auto;
+    word-wrap: break-word;
+
+    margin-bottom: 20px;
+
+    border: 1px solid darkgray;
+    border-top: 0;
+}
+
+.profile-card-header {
+    width: 100%;
+}
+
+.profile-boxes {
+    display: inline-block;
+    margin: 7px 0;
+
+    width: 50%;
+    height: 80vh;
+}
+
+.profile-intro-box:first-child {
+    margin-top: 10px;
+}
+
+.profile-intro-box {
+    display: inline-block;
+
+    width: 100%;
+    min-height: 30px;
+
+    line-break: auto;
+    word-wrap: break-word;
+
+    margin: 15px 5px;
+
+    background: none;
+    border: 2px solid #37474f;
+    color: #37474f;
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 810px;
+    }
+}
+
 nav.navbar-fixed {
     position: fixed;
     width: 100%;
 }
 
 @media (max-width: 960px) {
-
     nav.navbar {
         justify-content: space-between;
     }
@@ -81,14 +137,20 @@ nav.navbar-fixed {
     .navbar-link > a {
         padding: 0 0 0 0 !important;
     }
-
 }
 
 @media (min-width: 960px) {
-
     .display-only-small {
         display: none;
         font-size: 0;
     }
 
+    .profile-card {
+        width: 48%;
+        margin: 15px 5px;
+    }
+
+    .profile-card-header {
+        width: 100%;
+    }
 }
