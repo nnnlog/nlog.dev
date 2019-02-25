@@ -73,9 +73,9 @@ nav.navbar > * {
     color: white;
 }
 
-.profile-intro-box > .ghost-button {
+.profile-intro-box .ghost-button {
     font-size: 80%;
-    padding: 10px 10px;
+    padding: 10px 18px;
 }
 
 .ghost-button > span:first-child:after {

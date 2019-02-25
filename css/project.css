@@ -1,0 +1,43 @@
+.btn-back-main {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    padding-right: 8px;
+}
+
+.btn-back-main > i:first-child {
+    margin-right: 12px;
+    display: inline-block;
+    font-size: 85%;
+}
+
+.project-container {
+    margin-top: 15px;
+
+    width: 100%;
+    background: #FFF;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 70px 0;
+    color: inherit;
+    text-align: center;
+
+    font-size: 2em;
+    border-bottom: 1px solid #37474f;
+}
+
+.project-container::first-letter {
+    font-size: 140%;
+}
+
+.project-content {
+    padding: 15px 10px;
+    line-break: auto;
+    word-break: break-all;
+}

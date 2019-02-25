@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>엔로그 | Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/project.css">
+
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+</head>
+<body class="drawer drawer--left" style="background-color: rgba(0,0,0,.04);">
+
+<nav class="navbar navbar-fixed">
+    <i class="display-only-small fas fa-bars toggle-button" style="position: absolute;"
+       onclick="$('.drawer').drawer('open');"></i>
+    <a class="navbar-name" href="/">엔로그</a>
+    <ul class="content hide-text-on-small" style="padding: 0">
+        <li class="navbar-link"><a href="/projects/">Projects</a></li>
+        <li class="navbar-link"><a href="http://pmmp.me/" target="_blank">NAVER Blog</a></li>
+        <li class="navbar-link"><a href="http://github.com/nnnlog/" target="_blank">Github</a></li>
+    </ul>
+    <span class="display-only-small" style="padding: 0"></span>
+</nav>
+
+<!-- Side Nav -->
+<header role="banner">
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu" style="padding: 10px 20px;">
+            <li><a class="drawer-brand" href="#">MENU</a></li>
+            <li style="margin-top: 40px;"><a class="drawer-menu-item" href="/projects/">Projects</a></li>
+            <li><a class="drawer-menu-item" href="http://pmmp.me/" target="_blank">NAVER Blog</a></li>
+            <li><a class="drawer-menu-item" href="http://github.com/nnnlog/" target="_blank">Github</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div style="height: 100px;"></div>
+
+<div class="container" style="color: #37474f;">
+    <a class="btn-back-main" href="/">
+        <i class="fas fa-chevron-left"></i>Back to Main
+    </a>
+    <div class="project-container">
+        <div class="project-header" style="background: url('/images/mcberank.png') center / cover;">
+            MCBE RANK
+        </div>
+        <div class="project-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et magna et ligula aliquet facilisis. Nullam efficitur, dolor eget fringilla placerat, tortor nunc lobortis erat, quis consequat nibh augue vitae metus. Morbi ornare est nibh. In faucibus diam est, ut lobortis ante efficitur sit amet. Integer luctus, nisi imperdiet euismod rhoncus, ipsum purus euismod ante, sit amet faucibus nulla eros at neque. Aenean consectetur libero id dolor pulvinar, eu accumsan erat tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br><br>
+            Nunc et odio enim. Etiam condimentum, purus vitae maximus semper, eros sem hendrerit nisi, non rhoncus ipsum sem sed nibh. Donec varius lacinia bibendum. Nunc et lacus id ex hendrerit blandit. Donec rutrum fermentum diam sit amet rhoncus. Maecenas cursus porttitor varius. Maecenas quis lorem nisl.
+            <br><br>
+        </div>
+    </div>
+    <div></div>
+</div>
+
+<!-- Side Nav -->
+<script>
+    $(document).ready(function () {
+        $('.drawer').drawer();
+    });
+</script>
+</body>
+</html>
