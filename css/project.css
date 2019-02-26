@@ -29,6 +29,7 @@
     text-align: center;
 
     font-size: 2em;
+    font-weight: bold;
     border-bottom: 1px solid #37474f;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .project-content {
-    padding: 15px 10px;
+    padding: 20px 25px;
     line-break: auto;
     word-break: break-all;
 }
