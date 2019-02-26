@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>엔로그 | 404 Not Found</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+</head>
+<body class="drawer drawer--left">
+
+<nav class="navbar navbar-fixed">
+    <i class="display-only-small fas fa-bars toggle-button" style="position: absolute;"
+       onclick="$('.drawer').drawer('open');"></i>
+    <a class="navbar-name" href="/">엔로그</a>
+    <ul class="content hide-text-on-small" style="padding: 0">
+        <li class="navbar-link"><a href="/projects/">Projects</a></li>
+        <li class="navbar-link"><a href="http://pmmp.me/" target="_blank">NAVER Blog</a></li>
+        <li class="navbar-link"><a href="http://github.com/nnnlog/" target="_blank">Github</a></li>
+    </ul>
+    <span class="display-only-small" style="padding: 0"></span>
+</nav>
+
+<!-- Side Nav -->
+<header role="banner">
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu" style="padding: 10px 20px;">
+            <li><a class="drawer-brand" href="#">MENU</a></li>
+            <li style="margin-top: 40px;"><a class="drawer-menu-item" href="/projects/">Projects</a></li>
+            <li><a class="drawer-menu-item" href="http://pmmp.me/" target="_blank">NAVER Blog</a></li>
+            <li><a class="drawer-menu-item" href="http://github.com/nnnlog/" target="_blank">Github</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div style="height: 100px;"></div>
+
+<div class="container">
+    <div style="display: flex; align-items: center; flex-wrap: wrap; height: 40vh; padding-top: 20px;">
+        요청한 페이지가 존재하지 않습니다.
+    </div>
+    <a href="/" class="ghost-button" style="display: inline-block; margin-top: 20px;">메인으로 돌아가기</a>
+</div>
+
+<!-- Side Nav -->
+<script>
+    $(document).ready(function () {
+        $('.drawer').drawer();
+    });
+</script>
+</body>
+</html>
