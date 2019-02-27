@@ -52,10 +52,16 @@
     display: block;
     text-decoration: none;
     color: inherit;
-    padding-bottom: 10px;
-    margin-bottom: 70px;
+    padding-bottom: 30px;
+    margin-bottom: 80px;
 
     position: relative;
+
+    border-bottom: 1px solid #37474f;
+}
+
+.project-lists > a:last-child {
+    border: 0;
 }
 
 .project-lists > a:nth-child(even) {
