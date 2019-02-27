@@ -53,7 +53,9 @@
     text-decoration: none;
     color: inherit;
     padding-bottom: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+
+    position: relative;
 }
 
 .project-lists > a:nth-child(even) {
@@ -61,11 +63,20 @@
     text-align: right;
 }
 
+.project-intro-content {
+    display: inline-block;
+}
+
 .project-lists > a:nth-child(even) > .project-intro-content {
     text-align: right;
     padding-left: 10px;
     padding-right: 20px;
     margin-top: 15px;
+}
+
+.project-lists > a:nth-child(even) > .ghost-button {
+    left: 0;
+    position: absolute;
 }
 
 
@@ -77,6 +88,11 @@
 .project-lists > a:nth-child(odd) > .project-intro-content {
     padding-left: 37px;
     margin-top: 15px;
+}
+
+.project-lists > a:nth-child(odd) > .ghost-button {
+    right: 0;
+    position: absolute;
 }
 
 
