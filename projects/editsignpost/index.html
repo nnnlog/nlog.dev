@@ -15,18 +15,19 @@
         gtag('config', 'UA-128882787-3');
     </script>
 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="#37474f">
 
-    <title>엔로그 | Projects</title>
+    <title>엔로그 | EditSignPost</title>
 
     <meta name="description" content="엔로그의 깃허브 페이지">
     <link rel="canonical" href="https://nnnlog.github.io">
     <meta property="al:web:url" content="https://nnnlog.github.io">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="엔로그 | Projects">
+    <meta property="og:title" content="엔로그 | EditSignPost">
     <meta property="og:description" content="엔로그의 깃허브 페이지">
     <meta property="og:image" content="https://nnnlog.github.io/images/logo.png">
     <meta property="og:url" content="https://nnnlog.github.io/">
@@ -43,7 +44,7 @@
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 </head>
-<body class="drawer drawer--left">
+<body class="drawer drawer--left" style="background-color: rgba(0,0,0,.04);">
 
 <nav class="navbar navbar-fixed">
     <i class="display-only-small fas fa-bars toggle-button" style="position: absolute;"
@@ -72,42 +73,24 @@
 <div style="height: 100px;"></div>
 
 <div class="container" style="color: #37474f;">
-    <div class="project-lists">
-        <a href="/projects/mcberank">
-            <div class="project-intro-header"><i class="fas fa-chart-area"></i>MCBE Rank</div>
-            <div class="project-intro-content">
-                Node.js 를 기반으로 Minecraft BE 서버들의 정보, 순위를 보여줍니다.
-            </div>
-            <span class="ghost-button hide-on-small hide-text-on-small">자세히 보기</span>
-        </a>
-        <a href="/projects/smartui">
-            <div class="project-intro-header">SmartUI<i class="far fa-compass"></i></div>
-            <div class="project-intro-content">
-                MCPE 1.2에서 추가된 Form을 사용하여, 서버에서 여러가지 편의기능을 제공합니다.
-            </div>
-            <span class="ghost-button hide-on-small hide-text-on-small">자세히 보기</span>
-        </a>
-        <a href="https://nemoclan.ml/">
-            <div class="project-intro-header"><i class="fas fa-paperclip"></i>NEMOCLAN</div>
-            <div class="project-intro-content">
-                PHP 를 사용하여 클래시 로얄 클랜 사이트를 구축하였습니다.
-            </div>
-            <span class="ghost-button hide-on-small hide-text-on-small">자세히 보기</span>
-        </a>
-        <a href="https://github.com/nnnlog/nnnlog.github.io/">
-            <div class="project-intro-header">Github Page<i class="fas fa-server"></i></div>
-            <div class="project-intro-content">
-                Github Pages 를 이용해 자기소개 사이트를 만들었습니다.
-            </div>
-            <span class="ghost-button hide-on-small hide-text-on-small">자세히 보기</span>
-        </a>
-        <a href="/projects/editsignpost">
-            <div class="project-intro-header">EditSignPost<i class="fas fa-server"></i></div>
-            <div class="project-intro-content">
-                MCPE 1.2에서 추가된 Form을 사용하여, 표지판을 쉽게 수정합니다.
-            </div>
-            <span class="ghost-button hide-on-small hide-text-on-small">자세히 보기</span>
-        </a>
+    <a class="btn-back-main" href="/">
+        <i class="fas fa-chevron-left"></i>Back to Main
+    </a>
+    <a class="btn-back-main" href="/projects/" style="float: right; padding-right: 0;">
+        Back to List<i style="margin-left: 12px;" class="fas fa-chevron-right"></i>
+    </a>
+    <div class="project-container">
+        <div class="project-header" style="background: url('/images/mcberank.png') center / cover;">
+            SmartUI
+        </div>
+        <div class="project-content">
+            명령어를 사용하여 표지판을 UI로 수정할 수 있습니다.<br>
+            <a href="http://pmmp.me/221478393677">블로그 설명 보러가기</a><br><br>
+
+            <a href="https://github.com/nnnlog/EditSignPost" target="_blank" class="ghost-button">
+                <span>Open on Github</span><i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
     </div>
 </div>
 
