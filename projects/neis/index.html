@@ -18,10 +18,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="#37474f">
-    <title>엔로그 | 404 Not Found</title>
+
+    <meta name="theme-color" content="#37474f">
+
+    <title>엔로그 | neis</title>
+
+    <meta name="description" content="엔로그의 깃허브 페이지">
+    <link rel="canonical" href="https://nnnlog.github.io">
+    <meta property="al:web:url" content="https://nnnlog.github.io">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="엔로그 | neis">
+    <meta property="og:description" content="엔로그의 깃허브 페이지">
+    <meta property="og:image" content="https://nnnlog.github.io/images/logo.png">
+    <meta property="og:url" content="https://nnnlog.github.io/">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/project.css">
 
     <!-- drawer.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
@@ -31,7 +45,7 @@
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 </head>
-<body class="drawer drawer--left">
+<body class="drawer drawer--left" style="background-color: rgba(0,0,0,.04);">
 
 <nav class="navbar navbar-fixed">
     <i class="display-only-small fas fa-bars toggle-button" style="position: absolute;"
@@ -59,11 +73,27 @@
 
 <div style="height: 100px;"></div>
 
-<div class="container">
-    <div style="display: flex; align-items: center; flex-wrap: wrap; height: 40vh; padding-top: 20px;">
-        요청한 페이지가 존재하지 않습니다.
+<div class="container" style="color: #37474f;">
+    <a class="btn-back-main" href="/">
+        <i class="fas fa-chevron-left"></i>Back to Main
+    </a>
+    <a class="btn-back-main" href="/projects/" style="float: right; padding-right: 0;">
+        Back to List<i style="margin-left: 12px;" class="fas fa-chevron-right"></i>
+    </a>
+    <div class="project-container">
+        <div class="project-header" style="background: url('/images/logo.png') center / cover;">
+            neis
+        </div>
+        <div class="project-content">
+            Node.js 를 위한 neis api 입니다.<br>
+            학교 급식, 학사일정, 검색, 세부정보 조회와 같은 다양한 정보를 제공함과 동시에<br>
+            기존의 node-school-kr 모듈보다 더 빠른 속도, 더 많은 기능을 가지고 있습니다.
+
+            <a href="https://github.com/nnnlog/neis" target="_blank" class="ghost-button">
+                <span>Open on Github</span><i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
     </div>
-    <a href="/" class="ghost-button" style="display: inline-block; margin-top: 20px;">메인으로 돌아가기</a>
 </div>
 
 <!-- Side Nav -->
