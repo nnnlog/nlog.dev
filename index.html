@@ -35,7 +35,8 @@
 	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body oncontextmenu="return false;">
-<div style="position: fixed; top: 0; bottom: 0; left: 15px; z-index: 999999; display: flex; align-items: center; flex-direction: column; justify-content: center;" id="list">
+<div style="position: fixed; top: 0; bottom: 0; left: 15px; z-index: 999999; display: flex; align-items: center; flex-direction: column; justify-content: center;"
+     id="list">
 	<div onclick="pageMove(1);" class="circle circle-active"></div>
 	<div onclick="pageMove(2);" class="circle"></div>
 	<div onclick="pageMove(3);" class="circle"></div>
@@ -43,47 +44,59 @@
 	<div onclick="pageMove(5);" class="circle"></div>
 </div>
 <div id="body">
-	<section style="background: #403B39 center / cover;">
+	<section style="background: #444795 center / cover;">
 		<div style="/*backdrop-filter: blur(15px);*/ display: flex; justify-items: center; height: 100vh; align-items: center;">
 			<div style="margin: 0 auto; text-align: center;">
-				<p style="font-size: 50px; font-weight: 100; margin-bottom: 72px; font-family: 'Noto Sans KR Thin', sans-serif;">Developer</p>
+				<p style="font-size: 50px; font-weight: 100; margin-bottom: 72px; font-family: 'Noto Sans KR Thin', sans-serif;">
+					Developer</p>
 				<p style="font-size: 27px;">엔로그</p>
 			</div>
 		</div>
 		<!--<div style="width: 0; height: 0; border-bottom: 50px solid #4F4F4F; border-left: 100vw solid transparent; position: fixed; bottom: 0;" id="triangle"></div>
 		<div style="width: 0;height: 0; position: fixed; bottom: 0; display: block; z-index: 99999; margin-left: 50vw; border-left: 1px solid white; border-bottom: 25px solid white;"></div>-->
 	</section>
-	<section style="background: #4A4443 center / cover; margin-top: 100vh;">
+	<section style="background: #65428A center / cover; margin-top: 100vh;">
 		<div style="height: 100vh; display: flex; align-items: center; align-self: center; justify-content: center; flex-direction: column;">
 			<article style="margin: 0 auto;">
 				<p style="font-size: 36px; text-align: center; font-weight: 700;">Profile</p>
-				<p style="font-size: 20px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">엔로그</p>
+				<p style="font-size: 20px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
+					엔로그</p>
 			</article>
 			<article style="margin: 72px auto 0; font-size: 22px; color: rgba(255, 255, 255, .6);" class="profile-link">
-				<a href="https://github.com/nnnlog/" target="_blank" rel="noopener"><span class="mdi mdi-github"></span> @nnnlog</a>
-				<a href="https://t.me/nnnlog" target="_blank" rel="noopener"><span class="mdi mdi-telegram"></span> @nnnlog</a>
-				<a href="mailto:sorisem4106@naver.com" rel="noopener"><span class="mdi mdi-email"></span> sorisem4106@naver.com</a>
+				<a href="https://github.com/nnnlog/" target="_blank" rel="noopener"><span class="mdi mdi-github"></span>
+					@nnnlog</a>
+				<a href="https://t.me/nnnlog" target="_blank" rel="noopener"><span class="mdi mdi-telegram"></span>
+					@nnnlog</a>
+				<a href="mailto:sorisem4106@naver.com" rel="noopener"><span class="mdi mdi-email"></span>
+					sorisem4106@naver.com</a>
 			</article>
 		</div>
 	</section>
-	<section style="background: #343434 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
+	<section
+			style="background: #D1428D center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
 		<article style="margin: 0 auto;">
 			<p style="font-size: 36px; text-align: center; font-weight: 700;">Activities</p>
-			<p style="font-size: 22px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">활동</p>
+			<p style="font-size: 22px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
+				활동</p>
 		</article>
 		<article style="margin: 52px auto 0; color: rgba(255, 255, 255, .6);" class="activity-list">
-			<a href="https://github.com/nnnlog/neis" target="_blank" rel="noopener"><span class="mdi mdi-school-outline"></span> neis-api</a>
+			<a href="https://github.com/nnnlog/neis" target="_blank" rel="noopener"><span
+					class="mdi mdi-school-outline"></span> neis-api</a>
 			<!--<p>
 				나이스 사이트 구조를 분석하여 만들어진 API입니다.
 			</p>-->
-			<a href="https://github.com/convertFont/convertFont.github.io" target="_blank" rel="noopener"><span class="mdi mdi-minecraft"></span> ConvertFont</a>
-			<a href="https://nnnlog.github.io/codeup/" target="_blank" rel="noopener"><span class="mdi mdi-code-tags"></span> Algorithm(codeup)</a>
+			<a href="https://github.com/convertFont/convertFont.github.io" target="_blank" rel="noopener"><span
+					class="mdi mdi-minecraft"></span> ConvertFont</a>
+			<a href="https://nnnlog.github.io/codeup/" target="_blank" rel="noopener"><span
+					class="mdi mdi-code-tags"></span> Algorithm(codeup)</a>
 		</article>
 	</section>
-	<section style="background: #4A4346 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
+	<section
+			style="background: #FE5442 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
 		<article style="margin: 0 auto;">
 			<p style="font-size: 36px; text-align: center; font-weight: 700;">Language</p>
-			<p style="font-size: 22px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">언어</p>
+			<p style="font-size: 22px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
+				언어</p>
 		</article>
 		<article style="margin: 52px auto 0; color: rgba(255, 255, 255, .6);" class="activity-list">
 			<a><span class="mdi mdi-language-cpp"></span> 알고리즘, 자료구조</a>
@@ -91,13 +104,17 @@
 			<a><span class="mdi mdi-language-php"></span> CLI Application</a>
 		</article>
 	</section>
-	<section style="background: #403940 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
+	<section
+			style="background: #FFE000 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
 		<article style="margin: 0 auto;">
 			<p style="font-size: 36px; text-align: center; font-weight: 700;">Information</p>
-			<p style="font-size: 13px; text-align: center; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">&copy; 2018-2020 NLOG</p>
+			<p style="font-size: 13px; text-align: center; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
+				&copy; 2018-2020 NLOG</p>
 		</article>
-		<article style="margin: 52px auto 0; color: rgba(255, 255, 255, .6); font-size: 18px;" class="activity-list info-list">
-			<a href="https://github.com/nnnlog/nnnlog.github.io/" target="_blank" rel="noopener">Powered By Github</a><br>
+		<article style="margin: 52px auto 0; color: rgba(255, 255, 255, .6); font-size: 18px;"
+		         class="activity-list info-list">
+			<a href="https://github.com/nnnlog/nnnlog.github.io/" target="_blank" rel="noopener">Powered By
+				Github</a><br>
 			<a href="https://blog.naver.com/sorisem4106/" target="_blank" rel="noopener">Blog</a>
 		</article>
 	</section>
@@ -152,7 +169,11 @@
 		if (!dom.classList.contains("circle-active")) {
 			let delay = 0, current = Math.max(num, page_num);
 			for (let i = Math.min(num, page_num); i < current; i++) {
-				setTimeout(() => wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: (num > page_num ? 1 : -1)}, true), 50 * delay++);
+				setTimeout(() => wheelEventListener({
+					ctrlKey: false,
+					shiftKey: false,
+					deltaY: (num > page_num ? 1 : -1)
+				}, true), 50 * delay++);
 			}
 		}
 	};
