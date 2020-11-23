@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
 	user-select: none;
@@ -7,8 +7,8 @@
 
 html, body {
 	margin: 0;
-	font-weight: 300;
-	font-family: 'Noto Sans KR Light', sans-serif;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
 
 	color: white;
 	background: #fff;
