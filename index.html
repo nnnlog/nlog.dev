@@ -119,7 +119,7 @@
 <script>
 	let lastUpdate = -1, page_num = 1;
 	const wheelEventListener = (e, skip = false) => {
-		if (Date.now() - lastUpdate < 100 && !skip) {
+		if (Date.now() - lastUpdate <= 700 && !skip) {
 			return;
 		}
 		if (e.ctrlKey || e.shiftKey) return;
