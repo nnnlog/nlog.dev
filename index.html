@@ -184,9 +184,9 @@
 		let current = e.touches[0].pageY;
 		if (Math.abs(current - start) > 120) {
 			if (start > current) { //아래쪽으로 스크롤 중
-				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: 1}, true);
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: 1}, false);
 			} else {
-				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: -1}, true);
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: -1}, false);
 			}
 
 			start = current;
@@ -198,11 +198,11 @@
 		switch (e.key) {
 			case 'ArrowUp':
 			case 'PageUp':
-				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: -1}, true);
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: -1}, false);
 				break;
 			case 'ArrowDown':
 			case 'PageDown':
-				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: 1}, true);
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: 1}, false);
 				break;
 		}
 	})
