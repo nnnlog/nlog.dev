@@ -133,4 +133,21 @@ export default {
   margin-top: 60px;
   margin-left: 25px;
 }
+
+@media (max-width: 900px) {
+  .project-wrapper {
+    padding: 50px;
+  }
+
+  .project-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-content {
+    margin-top: 30px;
+    margin-left: 5px;
+
+    flex-direction: column;
+  }
+}
 </style>

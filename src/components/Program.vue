@@ -72,4 +72,14 @@ export default {
   margin: 10px 0 0 0;
   padding: 0;
 }
+
+@media (max-width: 900px) {
+  .program-header {
+    font-size: 25px;
+  }
+
+  .program-desc {
+    font-size: 16px;
+  }
+}
 </style>

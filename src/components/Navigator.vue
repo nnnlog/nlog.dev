@@ -1,6 +1,6 @@
 <template>
-  <span class="btn left mdi mdi-arrow-left" @click="left"></span>
-  <span v-if="skip !== ''" class="btn right mdi mdi-arrow-right" @click="right"></span>
+  <span class="btn navi-left navi mdi mdi-arrow-left" @click="left"></span>
+  <span v-if="skip !== ''" class="btn navi navi-right mdi mdi-arrow-right" @click="right"></span>
 </template>
 
 <script>
@@ -28,17 +28,30 @@ export default {
 </script>
 
 <style scoped>
-.left {
+.navi {
   position: absolute;
   top: 40px;
-  left: 40px;
   font-size: 25px;
 }
 
-.right {
-  position: absolute;
-  top: 40px;
+.navi-left {
+  left: 40px;
+}
+
+.navi-right {
   right: 40px;
-  font-size: 25px;
+}
+
+@media (max-width: 900px) {
+  .navi {
+    top: 20px;
+    font-size: 20px;
+  }
+  .navi-left {
+    left: 25px;
+  }
+  .navi-right {
+    right: 25px;
+  }
 }
 </style>

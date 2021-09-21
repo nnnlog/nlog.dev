@@ -54,6 +54,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 900px) {
+  p {
+   /* white-space: break-spaces; */
+  }
+}
+
 p {
   margin: 0;
 }

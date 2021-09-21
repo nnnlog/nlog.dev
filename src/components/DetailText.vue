@@ -43,4 +43,18 @@ export default {
 
   margin: 0;
 }
+
+@media (max-width: 900px) {
+  .detail {
+    font-size: 15px;
+  }
+
+  .detail-html {
+    font-size: 12px;
+  }
+
+  .detail-small > .detail-html {
+    font-size: 12px;
+  }
+}
 </style>

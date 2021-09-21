@@ -62,4 +62,10 @@ export default {
 .icon-link::after, .icon-link:hover::after {
   border: none;
 }
+
+@media (max-width: 900px) {
+  .icon {
+    font-size: 20px;
+  }
+}
 </style>

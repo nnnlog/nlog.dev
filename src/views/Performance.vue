@@ -143,4 +143,30 @@ export default {
   padding: 0;
   margin: 20px 0 0 10px;
 }
+
+
+@media (max-width: 900px) {
+  .perf-wrapper {
+    padding: 50px;
+  }
+
+  .perf-content {
+    margin-top: 30px;
+    margin-left: 5px;
+
+    flex-direction: column;
+  }
+
+  .perf-nxt, .perf-part:last-child {
+    margin-top: 40px;
+  }
+}
+</style>
+
+<style>
+@media (max-width: 900px) {
+  p {
+    white-space: break-spaces;
+  }
+}
 </style>

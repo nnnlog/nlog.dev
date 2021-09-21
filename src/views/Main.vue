@@ -71,4 +71,14 @@ export default {
   position: fixed;
   margin-top: 60vh;
 }
+
+@media (max-width: 900px) {
+  .main-title {
+    font-size: 50px;
+  }
+
+  .main-subtitle {
+    font-size: 20px;
+  }
+}
 </style>

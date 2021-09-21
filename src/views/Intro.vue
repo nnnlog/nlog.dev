@@ -198,12 +198,28 @@ export default {
 
   margin-top: 5px;
 
-  font-size: 18px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
 
 .intro-font-spec::first-letter {
   font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .intro-wrapper {
+    padding: 50px;
+  }
+
+  .intro-content {
+    margin-top: 30px;
+    margin-left: 5px;
+
+    flex-direction: column;
+  }
+
+  .intro-nxt, .intro-part:last-child {
+    margin-top: 40px;
+  }
 }
 </style>

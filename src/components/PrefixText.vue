@@ -41,4 +41,14 @@ export default {
   font-family: 'Raleway', 'IBM Plex Sans KR', sans-serif;
   font-weight: 400;
 }
+
+@media (max-width: 900px) {
+  .prefix {
+    font-size: 15px;
+  }
+
+  .pre-prefix {
+    align-items: flex-start;
+  }
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="main-subtitle">
+  <div class="subtitle">
     <span class="mdi subtitle-icon" :class="'mdi-' + icon"></span>
     <p class="subtitle-text">{{ text }}</p>
   </div>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-.main-subtitle {
+.subtitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,5 +33,11 @@ export default {
   font-weight: 500;
 
   margin: 0;
+}
+
+@media (max-width: 900px) {
+  .subtitle {
+    font-size: 20px;
+  }
 }
 </style>
