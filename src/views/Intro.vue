@@ -16,13 +16,14 @@
               <div class="intro-nxt"></div>
               <SubTitle icon="near-me" text="Contact"/>
               <ul class="intro-indent">
-                <li><a href="mailto:sorisem4106@naver.com">sorisem4106@naver.com</a></li>
+                <li><a href="mailto:me@nlog.dev">me@nlog.dev</a></li>
                 <li><a href="https://t.me/nnnlog" target="_blank" class="intro-font-spec">@nnnlog</a></li>
               </ul>
               <div class="intro-nxt"></div>
               <SubTitle icon="school" text="Education"/>
               <ul class="intro-indent">
-                <PrefixText prefix="(2019.03 ~ )" text="Dongnae High School"/>
+                <PrefixText prefix="(2022.03 ~ )" text="Soongsil University Computer Science"/>
+                <PrefixText prefix="(2019.03 ~ 2022.02)" text="Dongnae High School"/>
               </ul>
             </div>
             <div class="intro-part">
@@ -55,27 +56,27 @@ export default {
       links: [
         {
           text: "Blog",
-          detail: `- Views. <span style='font-family: "Raleway", sans-serif; font-weight: 400;'>165,413</span>`,
+          detail: `- Views. <span style='font-family: "Raleway", sans-serif; font-weight: 400;'>${this.$store.getters.info.blog}</span>`,
           link: "https://blog.nlog.dev/"
         },
         {
           text: "Github",
-          detail: `- Followers. <span style='font-family: "Raleway", sans-serif; font-weight: 400;'>97</span>`,
+          detail: `- Followers. <span style='font-family: "Raleway", sans-serif; font-weight: 400;'>${this.$store.getters.info.github}</span>`,
           link: "https://github.com/nnnlog"
         },
         {
           text: "Codeforces",
-          detail: `- Max rat. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: #283593;'>1657</span>`,
+          detail: `- Max rat. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: #283593;'>${this.$store.getters.info.cf}</span>`,
           link: "https://codeforces.com/profile/nlog/"
         },
         {
           text: "Baekjoon Online Judge",
-          detail: `- Solved. <span style='font-family: "Raleway", sans-serif; font-weight: 400;'>757</span>`,
+          detail: `- Solved. <span style='font-family: "Raleway", sans-serif; font-weight: 400;'>${this.$store.getters.info.boj}</span>`,
           link: "https://www.acmicpc.net/user/chansol"
         },
         {
           text: "Solved.ac",
-          detail: `- Diamond V. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: #2196F3'>2204</span>`,
+          detail: `- Diamond V. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: #2196F3'>${this.$store.getters.info.solved_rat}</span>`,
           link: "https://solved.ac/profile/chansol"
         },
       ],
@@ -181,6 +182,11 @@ export default {
 }
 
 .intro-indent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
   padding: 0;
   margin: 0 0 0 10px;
 }

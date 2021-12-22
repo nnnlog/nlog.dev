@@ -1,8 +1,31 @@
 <template>
   <div class="bg">
-    <router-view/>
+    <router-view v-if="!loading"/>
   </div>
 </template>
+
+<script>
+export default {
+  created() {
+    this.$store.commit("loadData");
+  },
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  computed: {
+    info() {
+      return this.$store.getters.info;
+    },
+  },
+  watch: {
+    info() {
+      this.loading = false;
+    },
+  },
+}
+</script>
 
 <style>
 @import url('https://cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css');
