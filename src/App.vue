@@ -1,6 +1,7 @@
 <template>
   <div class="bg">
     <router-view v-if="!loading"/>
+    <pre v-if="error !== undefined" class="error-container">{{ error }}</pre>
   </div>
 </template>
 
@@ -18,6 +19,9 @@ export default {
     info() {
       return this.$store.getters.info;
     },
+    error() {
+      return this.info.error;
+    }
   },
   watch: {
     info() {
@@ -75,6 +79,21 @@ export default {
 
 .hide-scroll {
   overflow: hidden;
+}
+
+.error-container {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: .85rem;
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  border-radius: .5rem;
+  padding: .5rem .7rem;
+
+  background: rgba(0, 0, 0, .4);
+  color: white;
 }
 
 @media (max-width: 900px) {

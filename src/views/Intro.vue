@@ -66,7 +66,7 @@ export default {
         },
         {
           text: "Codeforces",
-          detail: `- Max rat. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: #283593;'>${this.$store.getters.info.cf}</span>`,
+          detail: `- Max rat. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: ${this.getCodeforcesColor(this.$store.getters.info.cf)};'>${this.$store.getters.info.cf}</span>`,
           link: "https://codeforces.com/profile/nlog/"
         },
         {
@@ -82,6 +82,15 @@ export default {
       ],
       animation: ""
     }
+  },
+  methods: {
+    getCodeforcesColor(rating) {
+      if (rating <= 1599) return "";
+      if (rating <= 1899) return "#283593";
+      if (rating <= 2099) return "#a0a";
+      if (rating <= 2399) return "#ff8c00";
+      return "";
+    },
   },
   computed: {
     current() {
