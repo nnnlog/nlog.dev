@@ -1,6 +1,7 @@
 <template>
   <div class="bg">
-    <router-view v-if="!loading"/>
+    <router-view/>
+    <pre v-if="loading" class="error-container">최신 정보를 불러오고 있어요...<br>잠시만 기다려주세요.</pre>
     <pre v-if="error !== undefined" class="error-container">{{ error }}</pre>
   </div>
 </template>
