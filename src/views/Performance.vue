@@ -2,7 +2,7 @@
   <Intro/>
   <div class="perf" :class="(current ? '' : 'hide-scroll') + ' ' + animation">
     <div :class="current ? 'perf-scroll' : ''">
-      <div class="perf-wrapper">
+      <div class="perf-wrapper" v-if="!showExtends">
         <Navigator/>
         <div class="perf-main">
           <Title icon="chart-line-variant" text="Performance"/>
@@ -12,6 +12,7 @@
               <ul class="perf-part-list">
                 <PrefixText v-for="({prefix, text}) of awards" :prefix="prefix" :text="text"/>
               </ul>
+<!--              <a href="" @click.stop="showExtends = true">자세히 보기</a>-->
             </div>
             <div class="perf-part">
               <SubTitle icon="monitor" text="Activity"/>
@@ -22,6 +23,7 @@
           </main>
         </div>
       </div>
+      <DetailedAwards v-else :show-extends="showExtends"/>
     </div>
   </div>
 </template>
@@ -35,22 +37,25 @@ import SuffixText from "@/components/SuffixText";
 import DetailText from "@/components/DetailText";
 import Main from "@/views/Main";
 import Intro from "@/views/Intro";
+import DetailedAwards from "@/views/DetailedAwards";
 
 export default {
   name: 'Performance',
-  components: {Intro, Main, DetailText, SuffixText, PrefixText, SubTitle, Title, Navigator},
+  components: {DetailedAwards, Intro, Main, DetailText, SuffixText, PrefixText, SubTitle, Title, Navigator},
   data() {
     return {
       awards: [
-        {prefix: "(2020.08.)", text: "제 5회 국민대학교 알고리즘 대회 장려상"},
-        {prefix: "(2021.08.)\n\n", text: "제 38회 한국정보올림피아드\n2차 대회 고등부 장려상"},
+        {prefix: "(2022.11.)\n\n", text: "제22회 한국 대학생 프로그래밍 경시대회 은상\n(2022 ICPC Seoul Regional 5등)"},
+        {prefix: "(2021.08.)", text: "제6회 국민대학교 알고리즘 대회 동상"},
         {prefix: "(2021.08.)", text: "2021 부산 코딩경진대회 고등부 대상"},
-        {prefix: "(2021.08.)", text: "제 6회 국민대학교 알고리즘 대회 동상"},
+        {prefix: "(2021.08.)\n\n", text: "제38회 한국정보올림피아드\n2차 대회 고등부 장려상"},
       ],
       activities: [
+        {text: "소프트웨어 마에스트로 (SW마에스트로) 제13기 수료", detail: "- 2022.04. ~ 2022.11."},
         {text: "차세대 보안리더 양성 프로그램\n(BEST OF THE BEST 9기) 보안제품개발 수료", detail: "- 2020.07. ~ 2021.03."},
       ],
-      animation: ""
+      animation: "",
+      showExtends: false,
     }
   },
   computed: {

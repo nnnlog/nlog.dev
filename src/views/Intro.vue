@@ -76,7 +76,7 @@ export default {
         },
         {
           text: "Solved.ac",
-          detail: `- Diamond V. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: #2196F3'>${this.$store.getters.info.solved_rat}</span>`,
+          detail: `- Diamond IV. <span style='font-family: "Raleway", sans-serif; font-weight: 400; color: #2196F3'>${this.$store.getters.info.solved_rat}</span>`,
           link: "https://solved.ac/profile/chansol"
         },
       ],
