@@ -33,6 +33,16 @@ export default {
           name: "language-cpp",
           link: undefined
         },
+        android: {
+          color: "#3DDC84",
+          name: "android",
+          link: undefined
+        },
+        javascript: {
+          color: "#F0DB4F",
+          name: "language-javascript",
+          link: "https://developer.mozilla.org/ko/docs/Web/JavaScript"
+        },
       }
     };
   }

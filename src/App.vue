@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style>
-@import url('https://cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 

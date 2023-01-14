@@ -5,7 +5,7 @@ export default createStore({
 	state: {
 		next: false,
 		prev: false,
-		info: {"blog": "180,462", "github": 133, "cf": 1959, "boj": 1522, "solved_tier": 22, "solved_rat": 2330},
+		info: {"blog": "180,942", "github": 137, "cf": 1959, "boj": 1562, "solved_tier": 22, "solved_rat": 2336},
 	},
 	mutations: {
 		loadData(state) {
@@ -13,7 +13,7 @@ export default createStore({
 				if (res?.status !== 200) {
 					state.info.error = "";
 					state.info = JSON.parse(JSON.stringify(Object.assign(state.info, {
-						error: "최신 정보를 불러오지 못했어요.\n2022년 12월 14일의 자료를 보여주고 있어요.",
+						error: "최신 정보를 불러오지 못했어요.\n2023년 1월 15일의 자료를 보여주고 있어요.",
 					})));
 					console.log(state.info);
 				} else {

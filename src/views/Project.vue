@@ -35,6 +35,13 @@ export default {
     return {
       programs: [
         {
+          icon: "book-open-page-variant-outline",
+          name: "SSUrade",
+          link: "https://github.com/nnnlog/ssurade",
+          desc: "숭실대학교 성적 조회 애플리케이션",
+          lang: ['android', 'javascript'],
+        },
+        {
           icon: "school-outline",
           name: "dongo",
           link: "https://github.com/dongnae/dongo-be",
