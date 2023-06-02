@@ -51,6 +51,7 @@ export default {
         {prefix: "(2021.08.)\n\n", text: "제38회 한국정보올림피아드\n2차 대회 고등부 장려상"},
       ],
       activities: [
+        {text: "ICPC World Finalist 2022-2023", detail: "- 2023.11."},
         {text: "소프트웨어 마에스트로 (SW마에스트로) 제13기 수료", detail: "- 2022.04. ~ 2022.11."},
         {text: "차세대 보안리더 양성 프로그램\n(BEST OF THE BEST 9기) 보안제품개발 수료", detail: "- 2020.07. ~ 2021.03."},
       ],
