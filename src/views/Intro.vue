@@ -10,8 +10,9 @@
             <div class="intro-part">
               <SubTitle icon="card-bulleted-outline" text="Name"/>
               <ul class="intro-indent">
-                <SuffixText text="박찬솔" suffix="(ChanSol Park)"/>
-                <SuffixText text="엔로그" suffix="(nlog)" small/>
+                <SuffixText text="박찬솔" suffix="(Chansol Park)"/>
+<!--                <SuffixText text="엔로그" suffix="(nlog)" small/>-->
+                <SuffixText text="Pronoun: " suffix="she/her" small/>
               </ul>
               <div class="intro-nxt"></div>
               <SubTitle icon="near-me" text="Contact"/>
@@ -22,8 +23,8 @@
               <div class="intro-nxt"></div>
               <SubTitle icon="school" text="Education"/>
               <ul class="intro-indent">
-                <PrefixText prefix="(2022.03 ~ )" text="Soongsil University Computer Science"/>
-                <PrefixText prefix="(2019.03 ~ 2022.02)" text="Dongnae High School"/>
+                <PrefixText prefix="2022.03" text="Bachelor, CSE, Soongsil University"/>
+                <PrefixText prefix="~ 2025.02" text="Expected to graduate. (6th Semester Early Graduate)"/>
               </ul>
             </div>
             <div class="intro-part">

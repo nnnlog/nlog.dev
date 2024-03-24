@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <div class="main-wrapper">
-      <p class="main-title">엔로그</p>
-      <p class="main-subtitle">nlog</p>
+      <p class="main-title">박찬솔</p>
+      <p class="main-subtitle">Chansol Park</p>
     </div>
     <div class="btn main-next" @click="$store.dispatch('next', true); $router.push('/2');">
       <svg width="37" height="42" viewBox="0 0 37 42" fill="none" xmlns="http://www.w3.org/2000/svg">
