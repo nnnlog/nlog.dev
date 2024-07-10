@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
@@ -13,7 +14,6 @@
     "mdi-vue": "^3.0.13",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
-    "vue3-smooth-scroll": "^0.8.1",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
