@@ -44,7 +44,7 @@
       <div class="detail-value">(2021.05)</div>
     </li>
     <li class="bold">
-      <router-link to="/activity/algorithms" class="link">
+      <router-link to="/activity/algorithm" class="link">
         View all experiences related to algorithm
         <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
       </router-link>

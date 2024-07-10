@@ -3,6 +3,7 @@ import MainView from "../views/MainView.vue";
 import ActivityView from "@/views/activity/ActivityView.vue";
 import ActivityAlgorithmView from "@/views/activity/ActivityAlgorithmView.vue";
 import ProjectView from "@/views/project/ProjectView.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/project",
     name: "Project",
     component: ProjectView,
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: NotFoundView,
   },
 ];
 
