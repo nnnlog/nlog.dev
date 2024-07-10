@@ -13,9 +13,8 @@
     </li>
     <li class="bold">
       <router-link to="/project" class="link">
-        <!--
-            -->View all projects<!--
-        --><mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+        View all projects
+        <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
       </router-link>
     </li>
   </ul>

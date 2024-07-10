@@ -37,11 +37,8 @@
         </li>
         <li class="detail">
           <div>
-            <!--
-            -->
             TA at Training Camp of International Olympiad in Informatics,
-            Republic of Korea<!--
-            -->
+            Republic of Korea
           </div>
           <div class="detail-value">(2023.08 ~ )</div>
         </li>
@@ -76,15 +73,11 @@
       <ul>
         <li>
           <div>
-            <!--
-            -->Codemap, The web platform for preparing algorithm contests
-            -&nbsp;<!--
-        -->
+            Codemap, The web platform for preparing algorithm contests -&nbsp;
           </div>
-          <router-link to="/project/codemap" class="link"
-            ><!--
-            -->View detail of the project<!--
-        --><mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+          <router-link to="/project/codemap" class="link">
+            View detail of the project
+            <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
           </router-link>
         </li>
       </ul>
@@ -99,10 +92,7 @@
       <ul>
         <li class="detail">
           <div>
-            <!--
-            -->Excellence Award in National High School Cyber Security
-            Competition<!--
-        -->
+            Excellence Award in National High School Cyber Security Competition
           </div>
           <div class="detail-value">(2021.08)</div>
         </li>

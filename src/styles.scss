@@ -52,10 +52,6 @@ sup {
   }
 }
 
-//.detail {
-//  //display: block;
-//}
-
 .detail-value {
   margin-left: .5rem;
   font-weight: 300;
@@ -70,9 +66,16 @@ ul {
   margin: 0;
 }
 
-li,.detail {
+li, .detail {
   display: block;
   word-break: break-all;
+
+  & > * {
+    display: inline;
+  }
+}
+
+li {
   line-height: 2.4rem;
   margin-left: 1rem;
 
@@ -81,19 +84,16 @@ li,.detail {
     content: " ";
   }
 
-  & > * {
-    display: inline;
+  &::before {
+    position: absolute;
+    content: "•";
+    color: $primary-soft-color;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: -1rem;
+    font-weight: 900;
+    width: 1rem;
   }
-}
-
-li::before {
-  content: "•";
-  color: $primary-soft-color;
-  font-size: 1.5rem;
-  display: inline-block;
-  margin-left: -1rem;
-  font-weight: 900;
-  width: 1rem;
 }
 
 .mdi {
