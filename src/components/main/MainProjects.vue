@@ -5,13 +5,17 @@
   <ul>
     <li>
       <div class="semi-bold">Mostly using a Language & Framework</div>
-      : Javascript/Typescript (<b>Node.js</b>, express, <b>Vue.js</b>), Flutter,
-      C++ (Algorithm)
+      <div>: Javascript/Typescript (</div>
+      <b>Node.js</b>
+      <div>, express,</div>
+      <b>Vue.js</b>
+      <div>), Flutter, C++ (Algorithm)</div>
     </li>
     <li class="bold">
       <router-link to="/project" class="link">
-        View all projects
-        <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+        <!--
+            -->View all projects<!--
+        --><mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
       </router-link>
     </li>
   </ul>
