@@ -40,6 +40,8 @@ export default defineComponent({
 
   a {
     cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
 
   .mdi {

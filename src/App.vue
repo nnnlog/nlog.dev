@@ -19,7 +19,6 @@
 <script lang="ts" setup>
 import IntroComponent from "@/components/IntroComponent.vue";
 import { onMounted, ref } from "vue";
-import LoadingComponent from "@/components/LoadingComponent.vue";
 
 let isLoaded = ref(false);
 

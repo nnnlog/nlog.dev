@@ -6,9 +6,91 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title><%= htmlWebpackPlugin.options.title %></title>
-  <script src="https://rawcdn.githack.com/hasnainalsyed/smooth-scroll-js/74ffa6c38d56463ab259d267a2492a67b3e807a1/smooth-scroll.js"></script>
+  <script>
+    function init() {
+      new SmoothScroll(document, 120, 12);
+    }
+
+    function SmoothScroll(target, speed, smooth) {
+      if (target === document)
+        target = (document.scrollingElement
+          || document.documentElement
+          || document.body.parentNode
+          || document.body); // cross browser support for document scrolling
+
+      var moving = false;
+      var pos = target.scrollTop;
+      var frame = target === document.body
+      && document.documentElement
+        ? document.documentElement
+        : target; // safari is the new IE
+
+      target.addEventListener("mousewheel", scrolled, { passive: false });
+      target.addEventListener("DOMMouseScroll", scrolled, { passive: false });
+
+      function scrolled(e) {
+        // console.log(e);
+        e.preventDefault(); // disable default scrolling
+
+        var delta = normalizeWheelDelta(e);
+
+        if (pos === -1) {
+          pos = target.scrollTop;
+        }
+        pos += -delta * speed;
+        pos = Math.max(0, Math.min(pos, target.scrollHeight - frame.clientHeight)); // limit scrolling
+
+        if (!moving) update();
+      }
+
+      function normalizeWheelDelta(e) {
+        if (e.detail) {
+          if (e.wheelDelta)
+            return e.wheelDelta / e.detail / 40 * (e.detail > 0 ? 1 : -1); // Opera
+          else
+            return -e.detail / 3; // Firefox
+        } else
+          return e.wheelDelta / 120; // IE,Safari,Chrome
+      }
+
+      function update() {
+        if (pos === -1) {
+          requestFrame(update);
+          return;
+        }
+
+        moving = true;
+
+        var delta = Math.ceil((pos - target.scrollTop) / smooth);
+
+        target.scrollTop += delta;
+        // console.log(pos, target.scrollTop, delta);
+
+        if (Math.abs(pos - target.scrollTop) >= 1)
+          requestFrame(update);
+        else {
+          target.scrollTop = pos;
+          moving = false;
+          pos = -1;
+        }
+      }
+
+      var requestFrame = function() { // requestAnimationFrame cross browser
+        return (
+          window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          window.oRequestAnimationFrame ||
+          window.msRequestAnimationFrame ||
+          function(func) {
+            window.setTimeout(func, 1000 / 50);
+          }
+        );
+      }();
+    }
+  </script>
 </head>
-<body>
+<body onload="init()">
 <noscript>
   <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
     Please enable it to continue.</strong>
