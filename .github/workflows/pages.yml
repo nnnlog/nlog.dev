@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.4.1
       - name: Install pnpm
-        run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+        run: npm i -g pnpm
       - name: Install dependencies
         run: pnpm install
       - name: Build Vue.js
