@@ -1,153 +1,162 @@
 <template>
-  <div class="bg">
-    <router-view/>
-    <pre v-if="loading" class="error-container">최신 정보를 불러오고 있어요...<br>잠시만 기다려주세요.</pre>
-    <pre v-if="error !== undefined" class="error-container">{{ error }}</pre>
+  <!--  <LoadingComponent v-if="!isLoaded"></LoadingComponent>-->
+  <div v-if="!isLoaded"></div>
+  <div v-else>
+    <div class="wrapper">
+      <nav class="nav">
+        <router-link to="/">CV</router-link>
+        <router-link to="/activity">Activity</router-link>
+        <router-link to="/project">Project</router-link>
+      </nav>
+      <div class="background"></div>
+      <div class="background2"></div>
+      <IntroComponent></IntroComponent>
+      <router-view />
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  created() {
-    this.$store.commit("loadData");
-  },
-  data() {
-    return {
-      loading: true,
-    };
-  },
-  computed: {
-    info() {
-      return this.$store.getters.info;
-    },
-    error() {
-      return this.info.error;
-    }
-  },
-  watch: {
-    info() {
-      this.loading = false;
-    },
-  },
-}
+<script lang="ts" setup>
+import IntroComponent from "@/components/IntroComponent.vue";
+import { onMounted, ref } from "vue";
+import LoadingComponent from "@/components/LoadingComponent.vue";
+
+let isLoaded = ref(false);
+
+onMounted(() => {
+  document.fonts.ready.then(() => {
+    isLoaded.value = true;
+  });
+});
 </script>
 
-<style>
-@import url('https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+<style lang="scss">
+@use "@/styles";
 
-@keyframes left-to-right {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  box-sizing: border-box;
 }
 
-@keyframes right-to-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100vw);
-  }
+html {
+  scroll-behavior: smooth;
+  font-size: 12px;
 }
 
-.left-to-right {
-  animation: left-to-right 1s 1 normal forwards;
-}
-
-.right-to-left {
-  animation: right-to-left 1s 1 normal forwards;
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-  height: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-clip: padding-box;
-  background-color: rgba(0, 0, 0, .3);
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, .5);
-}
-
-.hide-scroll {
-  overflow: hidden;
-}
-
-.error-container {
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-size: .85rem;
-
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-
-  border-radius: .5rem;
-  padding: .5rem .7rem;
-
-  background: rgba(0, 0, 0, .4);
-  color: white;
-}
-
-@media (max-width: 900px) {
-  p {
-   /* white-space: break-spaces; */
-  }
-}
-
-p {
-  margin: 0;
-}
-
-a[href] {
-  display: inline-block;
-  width: fit-content;
-
-  color: inherit;
-  text-decoration: none;
-}
-
-a[href]::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border: 0;
-  border-top: .5px black dotted;
-  display: block;
-  transition: 300ms;
-
-  z-index: 999;
-}
-
-a[href]:hover::after {
-  width: 100%;
-}
-
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'IBM Plex Sans KR', sans-serif;
-*/
-head, body {
+body {
   margin: 0;
   padding: 0;
+  //font-family: "Pretendard Variable", Pretendard, -apple-system,
+  //  BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+  //  "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+  //  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable";
 }
 
-.bg {
-  min-height: 100vh;
-  width: 100vw;
-
-  background: linear-gradient(180deg, #012459 0.01%, #F06B7E 97.71%);
+::selection {
+  color: inherit !important;
+  background: styles.$primary-scroll-color;
 }
 
-.btn {
-  cursor: pointer;
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: calc(styles.$nav-height + styles.$hr-height);
+  background: white;
+  z-index: 110;
+}
+
+.background2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(123, 100, 240, 0.1);
+  z-index: 90;
+}
+
+.wrapper {
+  margin-top: styles.$nav-height;
+
+  width: 100%;
+  //height: 100vh;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: styles.$nav-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  background: rgba(123, 100, 240, 0.1);
+  padding: 0 4rem;
+}
+
+.nav::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-left: -4rem;
+  height: styles.$hr-height;
+  z-index: 200;
+  background: rgba(123, 100, 240, 0.1);
+  position: fixed;
+  top: styles.$nav-height;
+}
+
+.nav > * {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: styles.$primary-soft-color;
+  font-weight: 600;
+
+  &.router-link-exact-active {
+    color: styles.$primary-color;
+  }
+}
+
+.content-hr {
+  position: sticky;
+  top: styles.$nav-height;
+  border-radius: 2rem 2rem 0 0;
+  background: #fff;
+  height: styles.$hr-height;
+  z-index: 1000;
+  //box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 calc(-1 * styles.$hr-height) 40px 2px rgba(123, 100, 240, 0.25);
+
+  &.bottom {
+    margin-top: 90vh;
+  }
+
+  &::after {
+    display: block;
+    content: " ";
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    height: 5rem;
+    width: 100%;
+    position: absolute;
+    top: styles.$hr-height;
+  }
+}
+
+.content-main {
+  position: sticky;
+  top: calc(styles.$nav-height + styles.$hr-height);
+  min-height: calc(100vh - styles.$nav-height - styles.$hr-height);
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  padding: 5rem 7rem;
 }
 </style>
