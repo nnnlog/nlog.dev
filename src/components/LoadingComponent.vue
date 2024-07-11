@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="loading">Loading page...</div>
+  <div class="loading">{{ $t("loading") }}</div>
 </template>
 
 <style scoped lang="scss">

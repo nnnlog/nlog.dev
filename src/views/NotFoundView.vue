@@ -1,13 +1,14 @@
 <template>
-  <section class="content-hr bottom"></section>
+  <section class="content-hr"></section>
   <section class="content-main">
-    <div class="not-found">
-      There is no page that you are looking for!
-      <a @click="$router.go(-1)" class="link">
-        <mdicon width="1.5rem" height="1.5rem" name="arrow-left" />
-        Go back
-      </a>
-    </div>
+    <i18n-t keypath="notfound.message" tag="div" class="not-found">
+      <template v-slot:back>
+        <a @click="$router.go(-1)" class="link">
+          <mdicon width="1.5rem" height="1.5rem" name="arrow-left" />
+          {{ $t("notfound.back") }}
+        </a>
+      </template>
+    </i18n-t>
   </section>
 </template>
 

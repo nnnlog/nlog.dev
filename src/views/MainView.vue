@@ -20,7 +20,3 @@ export default defineComponent({
   components: { MainProjects, MainEducation, MainExperience, MainInformation },
 });
 </script>
-
-<style lang="scss" scoped>
-@use "@/styles";
-</style>

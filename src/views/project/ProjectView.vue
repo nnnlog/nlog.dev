@@ -1,18 +1,15 @@
 <template>
   <section class="content-hr"></section>
   <section class="content-main">
-    <div class="header">Project</div>
-    <div class="sub-header">SSUrade</div>
+    <div class="header">{{ $t("project.index.header") }}</div>
+    <div class="sub-header">{{ $t("project.index.ssurade.header") }}</div>
     <ul>
-      <li>Inquiry school information such as grade, attendance, etc.</li>
-      <li class="semi-bold">Technology: Flutter, Javascript</li>
+      <li>{{ $t("project.index.ssurade.description") }}</li>
+      <li class="semi-bold">{{ $t("project.index.ssurade.tech") }}</li>
       <li class="semi-bold">
         <router-link to="/project/ssurade" class="link">
-          View details about SSUrade<mdicon
-            width="1.5rem"
-            height="1.5rem"
-            name="arrow-right"
-          />
+          {{ $t("project.index.ssurade.view")
+          }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
         </router-link>
       </li>
       <li class="semi-bold">
@@ -21,12 +18,8 @@
           class="link"
           target="_blank"
         >
-          Github<mdicon
-            class="up"
-            width="1rem"
-            height="1rem"
-            name="open-in-new"
-          />
+          {{ $t("project.index.ssurade.github")
+          }}<mdicon class="up" width="1rem" height="1rem" name="open-in-new" />
         </a>
       </li>
     </ul>
@@ -40,7 +33,3 @@ export default defineComponent({
   name: "ActivityView",
 });
 </script>
-
-<style lang="scss" scoped>
-@use "@/styles";
-</style>

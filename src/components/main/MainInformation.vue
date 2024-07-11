@@ -1,51 +1,50 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="header">Information</div>
+  <div class="header">{{ $t("main.information.header") }}</div>
   <div class="information">
     <div class="info-row">
-      <div class="info-key">Name</div>
-      <div class="info-value bold">Chansol Park</div>
+      <div class="info-key">{{ $t("main.information.name.key") }}</div>
+      <div class="info-value bold">{{ $t("main.information.name.value") }}</div>
     </div>
     <div class="info-row">
-      <div class="info-key">Email</div>
+      <div class="info-key">{{ $t("main.information.email.key") }}</div>
       <div class="info-value link bold">
         <a href="mailto:sorisem4106@naver.com" target="_blank">
-          sorisem4106@naver.com
+          {{ $t("main.information.email.value") }}
         </a>
       </div>
     </div>
     <div class="info-row">
-      <div class="info-key">Place</div>
-      <div class="info-value">Seoul, Republic of Korea</div>
+      <div class="info-key">{{ $t("main.information.place.key") }}</div>
+      <div class="info-value">{{ $t("main.information.place.value") }}</div>
     </div>
     <div class="info-row">
-      <div class="info-key">Nation</div>
-      <div class="info-value">Republic of Korea</div>
+      <div class="info-key">{{ $t("main.information.nation.key") }}</div>
+      <div class="info-value">{{ $t("main.information.nation.value") }}</div>
     </div>
   </div>
-  <div class="sub-header" style="margin-top: 3rem">External Links</div>
+  <div class="sub-header" style="margin-top: 3rem">
+    {{ $t("main.information.external") }}
+  </div>
   <div class="information">
     <div class="info-row">
-      <div class="info-key">Github</div>
+      <div class="info-key">{{ $t("main.information.github.key") }}</div>
       <div class="info-value bold link">
-        <a href="https://github.com/nnnlog" target="_blank">nnnlog</a>
+        <a href="https://github.com/nnnlog" target="_blank">{{
+          $t("main.information.github.value")
+        }}</a>
       </div>
     </div>
     <div class="info-row">
-      <div class="info-key">ICPCID</div>
+      <div class="info-key">{{ $t("main.information.icpc.key") }}</div>
       <div class="info-value">
         <a
           href="https://icpc.global/ICPCID/IZEFL2OKWZE1"
           class="link"
           target="_blank"
-        >
-          Link<mdicon
-            width="1rem"
-            height="1rem"
-            name="open-in-new"
-            class="up"
-          />
+          >{{ $t("main.information.icpc.value")
+          }}<mdicon width="1rem" height="1rem" name="open-in-new" class="up" />
         </a>
       </div>
     </div>
@@ -53,8 +52,6 @@
 </template>
 
 <style scoped lang="scss">
-@use "@/styles";
-
 .information {
   display: flex;
   flex-direction: column;

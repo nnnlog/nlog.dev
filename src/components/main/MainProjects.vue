@@ -1,25 +1,26 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="header" style="margin-top: 6rem">Projects</div>
+  <div class="header" style="margin-top: 6rem">
+    {{ $t("main.project.header") }}
+  </div>
   <ul>
-    <li>
-      <div class="semi-bold">Mostly using a Language & Framework</div>
-      <div>: Javascript/Typescript (</div>
-      <b>Node.js</b>
-      <div>, express,</div>
-      <b>Vue.js</b>
-      <div>), Flutter, C++ (Algorithm)</div>
-    </li>
+    <i18n-t keypath="main.project.text" tag="li">
+      <template #key>
+        <div class="semi-bold">{{ $t("main.project.key") }}</div>
+      </template>
+      <template #node>
+        <b>{{ $t("main.project.node") }}</b>
+      </template>
+      <template #vue>
+        <b>{{ $t("main.project.vue") }}</b>
+      </template>
+    </i18n-t>
     <li class="bold">
       <router-link to="/project" class="link">
-        View all projects
-        <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+        {{ $t("main.project.link")
+        }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
       </router-link>
     </li>
   </ul>
 </template>
-
-<style scoped lang="scss">
-@use "@/styles";
-</style>

@@ -1,40 +1,83 @@
 <template>
   <section class="content-hr"></section>
   <section class="content-main">
-    <div class="header">Activity related to Algorithm</div>
-    <div class="sub-header">Participating on Contest</div>
+    <div class="header">{{ $t("activity.algorithm.header") }}</div>
+    <div class="sub-header">
+      {{ $t("activity.algorithm.participate_contest.header") }}
+    </div>
     <ul>
       <li class="detail semi-bold">
         <a href="https://icpc.global/" target="_blank" class="link"
-          >ICPC
-          <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
+          >{{ $t("activity.algorithm.participate_contest.icpc.header")
+          }}<mdicon class="up" width="1rem" height="1rem" name="open-in-new"
         /></a>
         <div class="detail-value">
-          (International Collegiate Programming Contest)
+          {{ $t("activity.algorithm.participate_contest.icpc.description") }}
         </div>
       </li>
       <li class="none">
         <ul>
-          <li class="detail semi-bold">
-            Honorable mention in the 47<sup>th</sup>&nbsp;ICPC World Finals
-            <div class="detail-value">(2024.04, Luxor, Egypt)</div>
-          </li>
-          <li class="detail">
-            Honorable mention in the 2023 ICPC Asia Seoul Regional
-            <div class="detail-value">(2023.11, Seoul, Republic of Korea)</div>
-          </li>
-          <li class="detail semi-bold">
-            Silver Award&nbsp;<sup>5th rank</sup>&nbsp;in the 2022 ICPC Asia
-            Seoul Regional
-            <div class="detail-value">(2022.11, Seoul, Republic of Korea)</div>
-          </li>
+          <i18n-t
+            keypath="activity.algorithm.participate_contest.icpc.icpcwf"
+            tag="li"
+            class="detail semi-bold"
+          >
+            <template #th>
+              <sup>{{ $t("_number_format.th") }}</sup>
+            </template>
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t(
+                    "activity.algorithm.participate_contest.icpc.icpcwf_duration"
+                  )
+                }}
+              </div>
+            </template>
+          </i18n-t>
+          <i18n-t
+            keypath="activity.algorithm.participate_contest.icpc.icpc2023"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t(
+                    "activity.algorithm.participate_contest.icpc.icpc2023_duration"
+                  )
+                }}
+              </div>
+            </template>
+          </i18n-t>
+          <i18n-t
+            keypath="activity.algorithm.participate_contest.icpc.icpc2022"
+            tag="li"
+            class="detail semi-bold"
+          >
+            <template #rank>
+              <sup>{{
+                $t("activity.algorithm.participate_contest.icpc.icpc2022_rank")
+              }}</sup>
+            </template>
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t(
+                    "activity.algorithm.participate_contest.icpc.icpc2022_duration"
+                  )
+                }}
+              </div>
+            </template>
+          </i18n-t>
           <li>
             <a
               href="https://icpc.global/ICPCID/IZEFL2OKWZE1"
               target="_blank"
               class="link bold"
             >
-              ICPCID<mdicon
+              {{ $t("activity.algorithm.participate_contest.icpc.icpcid")
+              }}<mdicon
                 class="up"
                 width="1rem"
                 height="1rem"
@@ -46,31 +89,67 @@
       </li>
       <li class="detail semi-bold">
         <a href="https://koi.or.kr/" target="_blank" class="link"
-          >KOI<mdicon class="up" width="1rem" height="1rem" name="open-in-new"
+          >{{ $t("activity.algorithm.participate_contest.koi.header")
+          }}<mdicon class="up" width="1rem" height="1rem" name="open-in-new"
         /></a>
-        <div class="detail-value">(Korea Olympiad in Informatics)</div>
+        <div class="detail-value">
+          {{ $t("activity.algorithm.participate_contest.koi.description") }}
+        </div>
       </li>
       <li class="none">
         <ul>
-          <li class="detail">
-            Encouragement Award in the 38<sup>th</sup>&nbsp;KOI
-            2<sup>nd</sup>&nbsp;Contest
-            <div class="detail-value">(2023.07)</div>
-          </li>
-          <li class="detail">
-            Silver Award in the 38<sup>th</sup>&nbsp;KOI
-            1<sup>st</sup>&nbsp;Contest, General High School
-            <div class="detail-value">(2023.05)</div>
-          </li>
+          <i18n-t
+            keypath="activity.algorithm.participate_contest.koi.koi2"
+            tag="li"
+            class="detail"
+          >
+            <template #th>
+              <sup>{{ $t("_number_format.th") }}</sup>
+            </template>
+            <template #nd>
+              <sup>{{ $t("_number_format.nd") }}</sup>
+            </template>
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t("activity.algorithm.participate_contest.koi.koi2_duration")
+                }}
+              </div>
+            </template>
+          </i18n-t>
+          <i18n-t
+            keypath="activity.algorithm.participate_contest.koi.koi1_general"
+            tag="li"
+            class="detail"
+          >
+            <template #th>
+              <sup>{{ $t("_number_format.th") }}</sup>
+            </template>
+            <template #st>
+              <sup>{{ $t("_number_format.st") }}</sup>
+            </template>
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t("activity.algorithm.participate_contest.koi.koi1_duration")
+                }}
+              </div>
+            </template>
+          </i18n-t>
         </ul>
       </li>
-      <li class="detail semi-bold">Contests when university</li>
+      <li class="detail semi-bold">
+        {{ $t("activity.algorithm.participate_contest.contest_univ.header") }}
+      </li>
       <li class="none">
         <ul>
           <li class="detail">
             <a href="https://ucpc.me/" class="link" target="_blank">
-              UCPC
-              <mdicon
+              {{
+                $t(
+                  "activity.algorithm.participate_contest.contest_univ.ucpc.header"
+                )
+              }}<mdicon
                 class="up"
                 width="1rem"
                 height="1rem"
@@ -78,154 +157,331 @@
               />
             </a>
             <div class="detail-value">
-              (Union of Clubs for Programming Contests)
+              {{
+                $t(
+                  "activity.algorithm.participate_contest.contest_univ.ucpc.description"
+                )
+              }}
             </div>
           </li>
           <li class="none">
             <ul>
-              <li class="detail">
-                35<sup>th</sup>&nbsp;rank in the UCPC 2023 Finals
-                <div class="detail-value">(2023.07, Republic of Korea)</div>
-              </li>
-              <li class="detail">
-                21<sup>st</sup>&nbsp;rank in the UCPC 2022 Finals
-                <div class="detail-value">(2022.07, Republic of Korea)</div>
-              </li>
+              <i18n-t
+                keypath="activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2023"
+                tag="li"
+                class="detail"
+              >
+                <template #th>
+                  <sup>{{ $t("_number_format.th") }}</sup>
+                </template>
+                <template #duration>
+                  <div class="detail-value">
+                    {{
+                      $t(
+                        "activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2023_duration"
+                      )
+                    }}
+                  </div>
+                </template>
+              </i18n-t>
+              <i18n-t
+                keypath="activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2022"
+                tag="li"
+                class="detail"
+              >
+                <template #st>
+                  <sup>{{ $t("_number_format.st") }}</sup>
+                </template>
+                <template #duration>
+                  <div class="detail-value">
+                    {{
+                      $t(
+                        "activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2022_duration"
+                      )
+                    }}
+                  </div>
+                </template>
+              </i18n-t>
             </ul>
           </li>
-          <li class="detail">
-            Encouragement Award in the Incheon National University Code Festival
-            2023
-            <div class="detail-value">(2023.12, Republic of Korea)</div>
-          </li>
-        </ul>
-      </li>
-      <li class="detail semi-bold">Contests when high school</li>
-      <li class="none">
-        <ul>
-          <li>Kookmin University Algorithm Contest</li>
-          <li class="none">
-            <ul>
-              <li class="detail">
-                Bronze Award in the 6<sup>th</sup>&nbsp;Kookmin University
-                Algorithm Contest
-                <div class="detail-value">(2021.08)</div>
-              </li>
-              <li class="detail">
-                Encouragement Award in the 5<sup>th</sup>&nbsp;Kookmin
-                University Algorithm Contest
-                <div class="detail-value">(2020.08)</div>
-              </li>
-            </ul>
-          </li>
-          <li>Busan Coding Contest</li>
-          <li class="none">
-            <ul>
-              <li class="detail">
-                First Prize in the 2021 Busan Coding Contest
-                <div class="detail-value">
-                  (2021.08, Busan, Republic of Korea)
-                </div>
-              </li>
-              <li class="detail">
-                First Prize in the 2020 Busan Coding Contest
-                <div class="detail-value">
-                  (2020.09, Busan, Republic of Korea)
-                </div>
-              </li>
-              <li class="detail">
-                Bronze Award in the 2019 Busan Coding Contest
-                <div class="detail-value">
-                  (2019.11, Busan, Republic of Korea)
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <div class="sub-header" style="margin-top: 2rem">Operating Contest</div>
-    <ul>
-      <li class="detail semi-bold">
-        <a href="https://koi.or.kr/" target="_blank" class="link"
-          >KOI <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
-        /></a>
-        <div class="detail-value">(Korea Olympiad in Informatics)</div>
-      </li>
-      <li class="none">
-        <ul>
-          <li class="detail">
-            Coordinator of KOI 2024 1<sup>st</sup>&nbsp;Programming Contest
-            <div class="detail-value">(2024.05)</div>
-          </li>
+          <i18n-t
+            keypath="activity.algorithm.participate_contest.contest_univ.ucpc.icn2023"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t(
+                    "activity.algorithm.participate_contest.contest_univ.ucpc.icn2023_duration"
+                  )
+                }}
+              </div>
+            </template>
+          </i18n-t>
         </ul>
       </li>
       <li class="detail semi-bold">
-        SCON
-        <div class="detail-value">
-          (Soongsil University Programming Contest)
-        </div>
+        {{ $t("activity.algorithm.participate_contest.contest_high.header") }}
       </li>
       <li class="none">
         <ul>
-          <li class="detail">
-            Create problem in 2024 SCON
-            <div class="detail-value">(2024.05)</div>
+          <li>
+            {{
+              $t(
+                "activity.algorithm.participate_contest.contest_high.kookmin.header"
+              )
+            }}
           </li>
-          <li class="detail">
-            Executive Director & Create problem in 2023 SCON
-            <div class="detail-value">(2023.05)</div>
+          <li class="none">
+            <ul>
+              <i18n-t
+                keypath="activity.algorithm.participate_contest.contest_high.kookmin.kmu2021"
+                tag="li"
+                class="detail"
+              >
+                <template #th>
+                  <sup>{{ $t("_number_format.th") }}</sup>
+                </template>
+                <template #duration>
+                  <div class="detail-value">
+                    {{
+                      $t(
+                        "activity.algorithm.participate_contest.contest_high.kookmin.kmu2021_duration"
+                      )
+                    }}
+                  </div>
+                </template>
+              </i18n-t>
+              <i18n-t
+                keypath="activity.algorithm.participate_contest.contest_high.kookmin.kmu2020"
+                tag="li"
+                class="detail"
+              >
+                <template #th>
+                  <sup>{{ $t("_number_format.th") }}</sup>
+                </template>
+                <template #duration>
+                  <div class="detail-value">
+                    {{
+                      $t(
+                        "activity.algorithm.participate_contest.contest_high.kookmin.kmu2020_duration"
+                      )
+                    }}
+                  </div>
+                </template>
+              </i18n-t>
+            </ul>
+          </li>
+          <li>
+            {{
+              $t(
+                "activity.algorithm.participate_contest.contest_high.busan.header"
+              )
+            }}
+          </li>
+          <li class="none">
+            <ul>
+              <i18n-t
+                keypath="activity.algorithm.participate_contest.contest_high.busan.busan2021"
+                tag="li"
+                class="detail"
+              >
+                <template #duration>
+                  <div class="detail-value">
+                    {{
+                      $t(
+                        "activity.algorithm.participate_contest.contest_high.busan.busan2021_duration"
+                      )
+                    }}
+                  </div>
+                </template>
+              </i18n-t>
+              <i18n-t
+                keypath="activity.algorithm.participate_contest.contest_high.busan.busan2020"
+                tag="li"
+                class="detail"
+              >
+                <template #duration>
+                  <div class="detail-value">
+                    {{
+                      $t(
+                        "activity.algorithm.participate_contest.contest_high.busan.busan2020_duration"
+                      )
+                    }}
+                  </div>
+                </template>
+              </i18n-t>
+              <i18n-t
+                keypath="activity.algorithm.participate_contest.contest_high.busan.busan2019"
+                tag="li"
+                class="detail"
+              >
+                <template #duration>
+                  <div class="detail-value">
+                    {{
+                      $t(
+                        "activity.algorithm.participate_contest.contest_high.busan.busan2019_duration"
+                      )
+                    }}
+                  </div>
+                </template>
+              </i18n-t>
+            </ul>
           </li>
         </ul>
       </li>
     </ul>
     <div class="sub-header" style="margin-top: 2rem">
-      Lecturer of Algorithm class
+      {{ $t("activity.algorithm.operating.header") }}
     </div>
     <ul>
       <li class="detail semi-bold">
         <a href="https://koi.or.kr/" target="_blank" class="link"
-          >KOI Committee
-          <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
+          >{{ $t("activity.algorithm.operating.koi.header")
+          }}<mdicon class="up" width="1rem" height="1rem" name="open-in-new"
         /></a>
         <div class="detail-value">
-          (Korea Olympiad in Informatics Committee)
+          {{ $t("activity.algorithm.operating.koi.description") }}
         </div>
       </li>
       <li class="none">
         <ul>
-          <li class="detail">
-            TA of IOI Training Camp (Summer/Winter School)
-            <div class="detail-value">(2023.08 ~ , Republic of Korea)</div>
-          </li>
+          <i18n-t
+            keypath="activity.algorithm.operating.koi.koi2024_1"
+            tag="li"
+            class="detail"
+          >
+            <template #st>
+              <sup>{{ $t("_number_format.st") }}</sup>
+            </template>
+            <template #duration>
+              <div class="detail-value">
+                {{ $t("activity.algorithm.operating.koi.koi2024_1_duration") }}
+              </div>
+            </template>
+          </i18n-t>
+        </ul>
+      </li>
+      <i18n-t
+        keypath="activity.algorithm.operating.scon.header"
+        tag="li"
+        class="detail semi-bold"
+      >
+        <template #detail>
+          <div class="detail-value">
+            {{ $t("activity.algorithm.operating.scon.description") }}
+          </div>
+        </template>
+      </i18n-t>
+      <li class="none">
+        <ul>
+          <i18n-t
+            keypath="activity.algorithm.operating.scon.scon2024"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{ $t("activity.algorithm.operating.scon.scon2024_duration") }}
+              </div>
+            </template>
+          </i18n-t>
+          <i18n-t
+            keypath="activity.algorithm.operating.scon.scon2023"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{ $t("activity.algorithm.operating.scon.scon2023_duration") }}
+              </div>
+            </template>
+          </i18n-t>
+        </ul>
+      </li>
+    </ul>
+    <div class="sub-header" style="margin-top: 2rem">
+      {{ $t("activity.algorithm.lecture.header") }}
+    </div>
+    <ul>
+      <li class="detail semi-bold">
+        <a href="https://koi.or.kr/" target="_blank" class="link"
+          >{{ $t("activity.algorithm.lecture.koi.header")
+          }}<mdicon class="up" width="1rem" height="1rem" name="open-in-new"
+        /></a>
+        <div class="detail-value">
+          {{ $t("activity.algorithm.lecture.koi.description") }}
+        </div>
+      </li>
+      <li class="none">
+        <ul>
+          <i18n-t
+            keypath="activity.algorithm.lecture.koi.ioi_camp"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{ $t("activity.algorithm.lecture.koi.ioi_camp_duration") }}
+              </div>
+            </template>
+          </i18n-t>
         </ul>
       </li>
       <li>
         <a href="https://icpc-sinchon.io/" target="_blank" class="link"
-          >ICPC Sinchon
+          >{{ $t("activity.algorithm.lecture.sinchon.header") }}
           <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
         /></a>
       </li>
       <li class="none">
         <ul>
-          <li class="detail">
-            Novice Lecturer of 2024 ICPC Sinchon Summer Camp
-            <div class="detail-value">(2024.07 ~ 2024.08)</div>
-          </li>
-          <li class="detail">
-            Novice Lecturer of 2024 ICPC Sinchon Winter Camp
-            <div class="detail-value">(2024.01 ~ 2024.02)</div>
-          </li>
-          <li class="detail">
-            Novice Lecturer of 2023 ICPC Sinchon Summer Camp
-            <div class="detail-value">(2023.07 ~ 2023.08)</div>
-          </li>
+          <i18n-t
+            keypath="activity.algorithm.lecture.sinchon.summer2024"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t("activity.algorithm.lecture.sinchon.summer2024_duration")
+                }}
+              </div>
+            </template>
+          </i18n-t>
+          <i18n-t
+            keypath="activity.algorithm.lecture.sinchon.winter2024"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t("activity.algorithm.lecture.sinchon.winter2024_duration")
+                }}
+              </div>
+            </template>
+          </i18n-t>
+          <i18n-t
+            keypath="activity.algorithm.lecture.sinchon.summer2023"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{
+                  $t("activity.algorithm.lecture.sinchon.summer2023_duration")
+                }}
+              </div>
+            </template>
+          </i18n-t>
           <li class="">
             <a
               href="https://github.com/nnnlog/algorithm-lecture"
               target="_blank"
               class="link"
-              >Lecture Materials (Korean)
+              >{{ $t("activity.algorithm.lecture.sinchon.material") }}
               <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
             /></a>
           </li>
@@ -233,37 +489,41 @@
       </li>
       <li class="detail">
         <a href="https://sccc.kr/" target="_blank" class="link"
-          >SCCC
-          <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
+          >{{ $t("activity.algorithm.lecture.sccc.header")
+          }}<mdicon class="up" width="1rem" height="1rem" name="open-in-new"
         /></a>
         <div class="detail-value">
-          (Problem Solving Club in CSE, Soongsil University)
+          {{ $t("activity.algorithm.lecture.sccc.description") }}
         </div>
       </li>
       <li class="none">
         <ul>
-          <li class="detail">
-            Lecturer of Basic C Language Study
-            <div class="detail-value">(2024.03 ~ 2024.05)</div>
-          </li>
-          <li class="detail">
-            Lecturer of Group Study(Algorithm/C Language)
-            <div class="detail-value">(2023.03 ~ 2023.05)</div>
-          </li>
+          <i18n-t
+            keypath="activity.algorithm.lecture.sccc.study2024"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{ $t("activity.algorithm.lecture.sccc.study2024_duration") }}
+              </div>
+            </template>
+          </i18n-t>
+          <i18n-t
+            keypath="activity.algorithm.lecture.sccc.study2023"
+            tag="li"
+            class="detail"
+          >
+            <template #duration>
+              <div class="detail-value">
+                {{ $t("activity.algorithm.lecture.sccc.study2023_duration") }}
+              </div>
+            </template>
+          </i18n-t>
         </ul>
       </li>
     </ul>
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "ActivityView",
-});
-</script>
-
-<style lang="scss" scoped>
-@use "@/styles";
-</style>
+<script lang="ts" setup></script>

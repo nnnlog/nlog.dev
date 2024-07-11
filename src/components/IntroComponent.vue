@@ -1,12 +1,12 @@
 <template>
   <section class="content-intro">
     <div class="left">
-      <div class="name">Chansol Park</div>
-      <div class="description">Algorithm, Web Developer</div>
+      <div class="name">{{ $t("intro.name") }}</div>
+      <div class="description">{{ $t("intro.description") }}</div>
     </div>
     <div class="right">
-      <div>Develop software</div>
-      <div>makes world better</div>
+      <div>{{ $t("intro.word[0]") }}</div>
+      <div>{{ $t("intro.word[1]") }}</div>
     </div>
   </section>
 </template>
@@ -67,7 +67,7 @@
   font-size: 1.5rem;
   align-self: stretch;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
 }

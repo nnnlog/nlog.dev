@@ -1,44 +1,38 @@
 <template>
   <section class="content-hr"></section>
   <section class="content-main">
-    <div class="header">Activity</div>
-    <div class="sub-header">in Algorithm Field</div>
+    <div class="header">{{ $t("activity.index.header") }}</div>
+    <div class="sub-header">{{ $t("activity.index.algorithm.header") }}</div>
     <ul>
-      <li>Participating on Contest</li>
-      <li>Operating Contest</li>
-      <li>Lecturer of Algorithm class</li>
+      <li>{{ $t("activity.index.algorithm.desc1") }}</li>
+      <li>{{ $t("activity.index.algorithm.desc2") }}</li>
+      <li>{{ $t("activity.index.algorithm.desc3") }}</li>
       <li>
         <router-link to="/activity/algorithm" class="link bold">
-          View all activities related to algorithm<mdicon
-            width="1.5rem"
-            height="1.5rem"
-            name="arrow-right"
-          />
+          {{ $t("activity.index.algorithm.view")
+          }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
         </router-link>
       </li>
     </ul>
     <div class="sub-header" style="margin-top: 2rem">
-      in Soongsil University
+      {{ $t("activity.index.ssu.header") }}
     </div>
     <ul>
-      <li class="semi-bold">Listened mainly subjects</li>
+      <li class="semi-bold">{{ $t("activity.index.ssu.desc1.header") }}</li>
       <li class="none">
         <ul>
-          <li>Linux System Programming, Operating System</li>
-          <li>Network Programming, Computer Network</li>
-          <li>Computer Vision</li>
+          <li>{{ $t("activity.index.ssu.desc1.desc1") }}</li>
+          <li>{{ $t("activity.index.ssu.desc1.desc2") }}</li>
+          <li>{{ $t("activity.index.ssu.desc1.desc3") }}</li>
         </ul>
       </li>
       <li class="semi-bold">
-        President, Executives in SCCC, Problem Solving Club in CSE department
+        {{ $t("activity.index.ssu.desc2") }}
       </li>
       <li>
         <router-link to="/activity/univ" class="link bold">
-          View detailed activities in the school<mdicon
-            width="1.5rem"
-            height="1.5rem"
-            name="arrow-right"
-          />
+          {{ $t("activity.index.ssu.view")
+          }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
         </router-link>
       </li>
     </ul>
@@ -52,7 +46,3 @@ export default defineComponent({
   name: "ActivityView",
 });
 </script>
-
-<style lang="scss" scoped>
-@use "@/styles";
-</style>

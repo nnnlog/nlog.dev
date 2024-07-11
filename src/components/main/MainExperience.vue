@@ -1,110 +1,198 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="header" style="margin-top: 6rem">Experience</div>
-  <div class="sub-header detail">
-    <div>Participating on Algorithm Contests</div>
-    <div class="detail-value">(2019 ~ )</div>
+  <div class="header" style="margin-top: 6rem">
+    {{ $t("main.experience.header") }}
   </div>
+  <i18n-t
+    keypath="main.experience.algorithm.header"
+    tag="div"
+    class="sub-header detail"
+  >
+    <template #duration>
+      <div class="detail-value">
+        {{ $t("main.experience.algorithm.duration") }}
+      </div>
+    </template>
+  </i18n-t>
   <ul>
-    <li class="detail semi-bold">
-      <div>Honorable mention in the 47</div>
-      <sup>th</sup>
-      <div>&nbsp;ICPC World Finals</div>
-      <div class="detail-value">(2024.04, Luxor, Egypt)</div>
-    </li>
+    <i18n-t
+      keypath="main.experience.algorithm.icpc.icpcwf"
+      tag="li"
+      class="detail semi-bold"
+    >
+      <template #th>
+        <sup>{{ $t("_number_format.th") }}</sup>
+      </template>
+      <template #duration>
+        <div class="detail-value">
+          {{ $t("main.experience.algorithm.icpc.icpcwf_duration") }}
+        </div>
+      </template>
+    </i18n-t>
     <li class="none">
       <ul>
-        <li class="detail">
-          <div>Silver Award</div>
-          <sup>&nbsp;5th rank&nbsp;</sup>
-          <div>in the 2022 ICPC Asia Seoul Regional</div>
-          <div class="detail-value">(2022.11, Seoul, Republic of Korea)</div>
-        </li>
+        <i18n-t
+          keypath="main.experience.algorithm.icpc.icpc2022"
+          class="detail"
+          tag="li"
+        >
+          <template #rank>
+            <sup>{{ $t("main.experience.algorithm.icpc.icpc2022_rank") }}</sup>
+          </template>
+          <template #duration>
+            <div class="detail-value">
+              {{ $t("main.experience.algorithm.icpc.icpc2022_duration") }}
+            </div>
+          </template>
+        </i18n-t>
       </ul>
     </li>
-    <li class="detail semi-bold">
-      <div>TA at Korea Olympiad in Informatics Committee</div>
-      <div class="detail-value">(2023.08 ~ )</div>
-    </li>
+    <i18n-t
+      keypath="main.experience.algorithm.koi_ta.header"
+      tag="li"
+      class="detail semi-bold"
+    >
+      <template #duration>
+        <div class="detail-value">
+          {{ $t("main.experience.algorithm.koi_ta.duration") }}
+        </div>
+      </template>
+    </i18n-t>
     <li class="none">
       <ul>
-        <li class="detail">
-          <div>Coordinator of Korea Olympiad in Informatics 2024 1</div>
-          <sup>st</sup>
-          <div>&nbsp;Programming Contest</div>
-          <div class="detail-value">(2024.02 ~ 2024.05)</div>
-        </li>
-        <li class="detail">
-          <div>
-            TA at Training Camp of International Olympiad in Informatics,
-            Republic of Korea
-          </div>
-          <div class="detail-value">(2023.08 ~ )</div>
-        </li>
+        <i18n-t
+          keypath="main.experience.algorithm.koi_ta.koi2024first"
+          tag="li"
+          class="detail"
+        >
+          <template #st>
+            <sup>{{ $t("_number_format.st") }}</sup>
+          </template>
+          <template #duration>
+            <div class="detail-value">
+              {{ $t("main.experience.algorithm.koi_ta.koi2024first_duration") }}
+            </div>
+          </template>
+        </i18n-t>
+        <i18n-t
+          keypath="main.experience.algorithm.koi_ta.ioi_camp"
+          tag="li"
+          class="detail"
+        >
+          <template #duration>
+            <div class="detail-value">
+              {{ $t("main.experience.algorithm.koi_ta.ioi_camp_duration") }}
+            </div>
+          </template>
+        </i18n-t>
       </ul>
     </li>
-    <li class="detail">
-      <div>Silver Award in the 38</div>
-      <sup>th</sup>
-      <div>&nbsp;Korea Olympiad in Informatics 1</div>
-      <sup>st</sup>
-      <div>&nbsp;Contest, General High School</div>
-      <div class="detail-value">(2021.05)</div>
-    </li>
+    <i18n-t
+      keypath="main.experience.algorithm.koi_award.first_general"
+      tag="li"
+      class="detail"
+    >
+      <template #st>
+        <sup>{{ $t("_number_format.st") }}</sup>
+      </template>
+      <template #th>
+        <sup>{{ $t("_number_format.th") }}</sup>
+      </template>
+      <template #duration>
+        <div class="detail-value">
+          {{ $t("main.experience.algorithm.koi_award.first_duration") }}
+        </div>
+      </template>
+    </i18n-t>
     <li class="bold">
       <router-link to="/activity/algorithm" class="link">
-        <div>View all experiences related to algorithm</div>
+        <div>{{ $t("main.experience.algorithm.view_all") }}</div>
         <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
       </router-link>
     </li>
   </ul>
-  <div class="sub-header detail" style="margin-top: 2rem">
-    <div>Completed Software Programs</div>
-    <div class="detail-value">(2020 ~ )</div>
-  </div>
+  <i18n-t
+    keypath="main.experience.software.header"
+    tag="div"
+    class="sub-header detail"
+    style="margin-top: 2rem"
+  >
+    <template #duration>
+      <div class="detail-value">
+        {{ $t("main.experience.software.duration") }}
+      </div>
+    </template>
+  </i18n-t>
   <ul>
-    <li class="detail semi-bold">
-      <div>Software Maestro 13</div>
-      <sup>th</sup>
-      <div class="detail-value">(2022.04 ~ 2022.11)</div>
-    </li>
+    <i18n-t
+      keypath="main.experience.software.soma.header"
+      tag="li"
+      class="detail semi-bold"
+    >
+      <template #th>
+        <sup>{{ $t("_number_format.th") }}</sup>
+      </template>
+      <template #duration>
+        <div class="detail-value">
+          {{ $t("main.experience.software.soma.duration") }}
+        </div>
+      </template>
+    </i18n-t>
     <li class="none">
       <ul>
-        <li>
-          <div>
-            Codemap, The web platform for preparing algorithm contests -&nbsp;
-          </div>
-          <router-link to="/project/codemap" class="link">
-            View detail of the project
-            <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
-          </router-link>
-        </li>
+        <i18n-t keypath="main.experience.software.soma.project" tag="li">
+          <template #detail>
+            <router-link to="/project/codemap" class="link">
+              {{ $t("main.experience.software.soma.project_detail")
+              }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+            </router-link>
+          </template>
+        </i18n-t>
       </ul>
     </li>
-    <li class="detail">
-      <div>BEST OF THE BEST 9</div>
-      <sup>th</sup>
-      <div>, Security product development</div>
-      <div class="detail-value">(2020.07 ~ 2021.03)</div>
-    </li>
+    <i18n-t
+      keypath="main.experience.software.bob.header"
+      tag="li"
+      class="detail"
+    >
+      <template #th>
+        <sup>{{ $t("_number_format.th") }}</sup>
+      </template>
+      <template #duration>
+        <div class="detail-value">
+          {{ $t("main.experience.software.bob.duration") }}
+        </div>
+      </template>
+    </i18n-t>
     <li class="none">
       <ul>
-        <li class="detail">
-          <div>
-            Excellence Award in National High School Cyber Security Competition
-          </div>
-          <div class="detail-value">(2021.08)</div>
-        </li>
+        <i18n-t
+          keypath="main.experience.software.bob.award"
+          tag="li"
+          class="detail"
+        >
+          <template #th>
+            <sup>{{ $t("_number_format.th") }}</sup>
+          </template>
+          <template #duration>
+            <div class="detail-value">
+              {{ $t("main.experience.software.bob.award_duration") }}
+            </div>
+          </template>
+        </i18n-t>
       </ul>
     </li>
-    <li class="detail">
-      <div>SW-oriented class, Dongnae High School</div>
-      <div class="detail-value">(2020.03 ~ 2022.02)</div>
-    </li>
+    <i18n-t
+      keypath="main.experience.software.high_school.header"
+      tag="li"
+      class="detail"
+    >
+      <template #duration>
+        <div class="detail-value">
+          {{ $t("main.experience.software.high_school.duration") }}
+        </div>
+      </template>
+    </i18n-t>
   </ul>
 </template>
-
-<style scoped lang="scss">
-@use "@/styles";
-</style>

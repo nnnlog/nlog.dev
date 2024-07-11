@@ -4,9 +4,19 @@
   <div v-else>
     <div class="wrapper">
       <nav class="nav">
-        <router-link to="/">CV</router-link>
-        <router-link to="/activity">Activity</router-link>
-        <router-link to="/project">Project</router-link>
+        <router-link to="/">{{ $t("nav.cv") }}</router-link>
+        <router-link to="/activity">{{ $t("nav.activity") }}</router-link>
+        <router-link to="/project">{{ $t("nav.project") }}</router-link>
+      </nav>
+      <nav class="lang">
+        <div
+          v-for="lang in $i18n.availableLocales"
+          :key="lang"
+          :class="{ active: $i18n.locale === lang }"
+          @click="setLanguage(lang as typeof $i18n.locale)"
+        >
+          {{ lang.toUpperCase() }}
+        </div>
       </nav>
       <div class="background"></div>
       <div class="background2"></div>
@@ -19,13 +29,27 @@
 <script lang="ts" setup>
 import IntroComponent from "@/components/IntroComponent.vue";
 import { onMounted, ref } from "vue";
+import i18n_ from "@/i18n";
 
+const i18n = i18n_.global;
+type Locales = typeof i18n.locale.value;
 let isLoaded = ref(false);
+
+const setLanguage = (lang: Locales) => {
+  localStorage.setItem("lang", lang);
+  i18n.locale.value = lang;
+};
 
 onMounted(() => {
   document.fonts.ready.then(() => {
     isLoaded.value = true;
   });
+
+  let language = (localStorage.getItem("lang") ||
+    navigator.language) as Locales;
+  if (i18n.availableLocales.includes(language)) {
+    i18n.locale.value = language;
+  }
 });
 </script>
 
@@ -83,7 +107,8 @@ body {
   //height: 100vh;
 }
 
-.nav {
+.nav,
+.lang {
   display: flex;
   align-items: center;
   height: styles.$nav-height;
@@ -93,6 +118,27 @@ body {
   z-index: 200;
   background: rgba(123, 100, 240, 0.1);
   padding: 0 4rem;
+
+  & > * {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: styles.$primary-soft-color;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.router-link-exact-active,
+    &.active {
+      color: styles.$primary-color;
+    }
+  }
+}
+
+.lang {
+  width: fit-content;
+  margin-left: auto;
+  right: 0;
+  background: transparent;
 }
 
 .nav::after {
@@ -105,18 +151,6 @@ body {
   background: rgba(123, 100, 240, 0.1);
   position: fixed;
   top: styles.$nav-height;
-}
-
-.nav > * {
-  margin-right: 2rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: styles.$primary-soft-color;
-  font-weight: 600;
-
-  &.router-link-exact-active {
-    color: styles.$primary-color;
-  }
 }
 
 .content-hr {
@@ -157,5 +191,28 @@ body {
   background: #fff;
   z-index: 100;
   padding: 5rem 7rem;
+}
+
+@media screen and (max-width: 800px) {
+  .nav,
+  .lang {
+    padding: 0 2rem;
+  }
+
+  .nav::after {
+    margin-left: -2rem;
+  }
+
+  //.lang {
+  //  padding: 0 2rem;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  align-items: center;
+  //
+  //  & > * {
+  //    margin-top: 1rem;
+  //    margin-right: 0;
+  //  }
+  //}
 }
 </style>
