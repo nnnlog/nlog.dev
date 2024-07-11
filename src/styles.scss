@@ -5,6 +5,8 @@ $primary-scroll-color: #7B64F040;
 
 $hr-height: 40px;
 
+$media-query-width: 800px;
+
 sup {
   font-size: 1rem;
   align-self: flex-start;
@@ -112,11 +114,5 @@ li {
       position: absolute;
       top: 0.5rem;
     }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .content-main {
-    padding: 3rem 3rem;
   }
 }

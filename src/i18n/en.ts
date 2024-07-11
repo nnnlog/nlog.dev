@@ -64,7 +64,7 @@ export default {
           duration: "(2023.08 ~ )",
           koi2024first:
             "Coordinator of Korea Olympiad in Informatics 2024 1{st} Programming Contest{duration}",
-          koi2024first_duration: "(2024.02 ~ 2024.05)",
+          koi2024first_duration: "(2024.05)",
           ioi_camp:
             "TA at Training Camp of International Olympiad in Informatics, Republic of Korea{duration}",
           ioi_camp_duration: "(2023.08 ~ )",

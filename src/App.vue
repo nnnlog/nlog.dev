@@ -190,10 +190,10 @@ body {
   width: 100%;
   background: #fff;
   z-index: 100;
-  padding: 5rem 7rem;
+  padding: 3rem 7rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: styles.$media-query-width) {
   .nav,
   .lang {
     padding: 0 2rem;
@@ -214,5 +214,9 @@ body {
   //    margin-right: 0;
   //  }
   //}
+
+  .content-main {
+    padding: 3rem 3rem !important;
+  }
 }
 </style>

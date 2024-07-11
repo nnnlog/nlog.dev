@@ -69,7 +69,7 @@ export default {
             "제38회 한국정보올림피아드 1차 대회 일반고 부문 은상{duration}",
           first_duration: "(2021.05)",
         },
-        view_all: "View all experiences related to algorithm",
+        view_all: "알고리즘 관련 모든 활동 보기",
       },
       software: {
         header: "이수한 소프트웨어 활동{duration}",
