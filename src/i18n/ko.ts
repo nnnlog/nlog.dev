@@ -100,7 +100,7 @@ export default {
       },
       email: {
         key: "이메일",
-        value: "sorisem4106@naver.com",
+        value: "sorisem4106{'@'}naver.com",
       },
       place: {
         key: "위치",

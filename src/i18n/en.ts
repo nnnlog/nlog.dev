@@ -108,7 +108,7 @@ export default {
       },
       email: {
         key: "Email",
-        value: "sorisem4106@naver.com",
+        value: "sorisem4106{'@'}naver.com",
       },
       place: {
         key: "Place",
