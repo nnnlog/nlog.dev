@@ -77,4 +77,10 @@
   font-size: 1.5rem;
   text-align: right;
 }
+
+@media screen and (max-width: 600px) {
+  .info-row {
+    width: 100%;
+  }
+}
 </style>

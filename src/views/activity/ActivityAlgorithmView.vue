@@ -46,7 +46,7 @@
       </li>
       <li class="detail semi-bold">
         <a href="https://koi.or.kr/" target="_blank" class="link"
-          >KOI <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
+          >KOI<mdicon class="up" width="1rem" height="1rem" name="open-in-new"
         /></a>
         <div class="detail-value">(Korea Olympiad in Informatics)</div>
       </li>
@@ -219,6 +219,15 @@
           <li class="detail">
             Novice Lecturer of 2023 ICPC Sinchon Summer Camp
             <div class="detail-value">(2023.07 ~ 2023.08)</div>
+          </li>
+          <li class="">
+            <a
+              href="https://github.com/nnnlog/algorithm-lecture"
+              target="_blank"
+              class="link"
+              >Lecture Materials (Korean)
+              <mdicon class="up" width="1rem" height="1rem" name="open-in-new"
+            /></a>
           </li>
         </ul>
       </li>

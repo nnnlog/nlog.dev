@@ -68,7 +68,7 @@ ul {
 
 li, .detail {
   display: block;
-  word-break: break-all;
+  word-break: break-word;
 
   & > * {
     display: inline;
@@ -112,5 +112,11 @@ li {
       position: absolute;
       top: 0.5rem;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-main {
+    padding: 3rem 3rem;
   }
 }

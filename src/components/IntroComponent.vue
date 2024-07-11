@@ -4,7 +4,10 @@
       <div class="name">Chansol Park</div>
       <div class="description">Algorithm, Web Developer</div>
     </div>
-    <div class="right">Develop software<br />makes world better</div>
+    <div class="right">
+      <div>Develop software</div>
+      <div>makes world better</div>
+    </div>
   </section>
 </template>
 
@@ -14,10 +17,13 @@
 @use "@/styles";
 
 .content-intro {
+  $var: 30vw;
   position: fixed;
-  left: 30vh;
-  //top: calc(styles.$nav-height + styles.$hr-height);
   bottom: 30vh;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: 0 auto;
   z-index: 95;
   display: flex;
 }
@@ -62,5 +68,28 @@
   align-self: stretch;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .content-intro {
+    flex-direction: column;
+  }
+
+  .right {
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-left: none;
+    border-top: 1px solid black;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .right > *:first-child {
+    margin-right: 0.5rem;
+  }
 }
 </style>
