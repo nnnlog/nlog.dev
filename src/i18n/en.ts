@@ -181,10 +181,10 @@ export default {
           header: "KOI",
           description: "(Korea Olympiad in Informatics)",
           koi2: "Encouragement Award in the 38{th} KOI 2{nd} Contest{duration}",
-          koi2_duration: "(2023.07)",
+          koi2_duration: "(2021.07)",
           koi1_general:
             "Silver Award in the 38{th} KOI 1{st} Contest, General High School{duration}",
-          koi1_duration: "(2023.05)",
+          koi1_duration: "(2021.05)",
         },
         contest_univ: {
           header: "Contests when university",

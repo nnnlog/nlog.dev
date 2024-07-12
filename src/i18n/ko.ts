@@ -60,7 +60,7 @@ export default {
           duration: "(2023.08 ~ )",
           koi2024first:
             "한국정보올림피아드 2024년 1차 대회 프로그래밍 코디네이터{duration}",
-          koi2024first_duration: "(2024.02 ~ 2024.05)",
+          koi2024first_duration: "(2024.05)",
           ioi_camp: "국제정보올림피아드 교육생(계절학교) 코치{duration}",
           ioi_camp_duration: "(2023.08 ~ )",
         },
@@ -172,10 +172,10 @@ export default {
           header: "KOI",
           description: "(한국정보올림피아드)",
           koi2: "제38회 한국정보올림피아드 2차 대회 고등부 장려상{duration}",
-          koi2_duration: "(2023.07)",
+          koi2_duration: "(2021.07)",
           koi1_general:
             "제38회 한국정보올림피아드 1차 대회 일반고부문 은상{duration}",
-          koi1_duration: "(2023.05)",
+          koi1_duration: "(2021.05)",
         },
         contest_univ: {
           header: "대학교 재학 중 참가한 대회",
