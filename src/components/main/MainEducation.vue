@@ -86,8 +86,8 @@
     </li>
     <li class="semi-bold">
       <router-link to="/activity/univ" class="link">
-        {{ $t("main.education.bachelor.completed_subject") }}
-        <mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+        {{ $t("main.education.bachelor.completed_subject")
+        }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
       </router-link>
     </li>
   </ul>

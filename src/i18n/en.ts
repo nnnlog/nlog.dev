@@ -125,7 +125,7 @@ export default {
       },
       icpc: {
         key: "ICPCID",
-        value: "Link",
+        value: "Open",
       },
     },
     project: {
@@ -279,12 +279,46 @@ export default {
       header: "Project",
       ssurade: {
         header: "SSUrade",
+        duration: "(2022.06 ~ )",
         description:
-          "Inquiry school information such as grade, attendance, etc.",
+          "An application that inquiry Soongsil University's information such as grade, attendance, etc.",
         tech: "Technology: Flutter, Javascript",
+        scale: "Personal Project",
+        playstore: "Play Store",
+        playstore_installation_count: "Installation count in Play Store : 1100",
         view: "View details about SSUrade",
         github: "Github",
       },
+      ssullabus: {
+        header: "SSUllabus",
+        duration: "(2024.02 ~ )",
+        description:
+          "Web Page that finds Soongsil Unviersity's opened subject with various filter.",
+        tech: "Technology: node.js(hono.js, playwright), solid.js, GraphQL, SQLite",
+        scale: "Personal Project",
+        web: "Web Page",
+        github: "Github",
+      },
+      codemap: {
+        header: "Codemap",
+        duration: "(2022.06 ~ 2022.12)",
+        description:
+          "(Software Maestro Team Project) Web Page for preparing algorithm contest.",
+        tech: "Technology: Vue.js, JWT, Github CI/CD",
+        scale: "Team Project (Role: Frontend)",
+        github: "Github (Frontend)",
+      },
+    },
+    ssurade: {
+      header: "SSUrade",
+      duration: "(2022.06 ~ )",
+      description:
+        "An application that inquiry Soongsil University's information such as grade, attendance, etc.",
+      tech: "Technology: Flutter, Javascript",
+      scale: "Personal Project",
+      playstore: "Play Store",
+      playstore_installation_count: "Installation count in Play Store : 1100",
+      github: "Github",
     },
   },
 };
