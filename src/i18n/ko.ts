@@ -12,7 +12,7 @@ export default {
   },
   intro: {
     name: "박찬솔",
-    description: "알고리즘, 웹 개발자",
+    description: "소프트웨어 엔지니어",
     word: ["더 나은 세상을 만드는", "소프트웨어를 개발합니다"],
   },
   notfound: {

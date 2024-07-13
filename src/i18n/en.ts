@@ -12,7 +12,7 @@ export default {
   },
   intro: {
     name: "Chansol Park",
-    description: "Algorithm, Web Developer",
+    description: "Software Engineer",
     word: ["Develop software", "makes world better"],
   },
   notfound: {
