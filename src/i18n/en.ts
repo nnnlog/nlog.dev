@@ -156,7 +156,7 @@ export default {
           desc3: "Computer Vision",
         },
         desc2: "President, Executives in SCCC, Problem Solving Club in CSE",
-        view: "View detailed activities in the school",
+        view: "View detailed of completed subjects",
       },
     },
     algorithm: {
@@ -271,6 +271,53 @@ export default {
           study2023: "Lecturer of Group Study(Algorithm/C Language){duration}",
           study2023_duration: "(2023.03 ~ 2023.05)",
         },
+      },
+    },
+    univ: {
+      header: "Mainly Subjects in Soongsil University",
+      pl: {
+        header: "Programming Language",
+        duration: "(Spring, 2024)",
+        github: "Github",
+        hw: "Make the simple parser using Recursive-Descent Parser based on EBNF",
+      },
+      network: {
+        header: "Network Programming",
+        duration: "(Spring, 2024)",
+        github: "Github",
+        outline:
+          "Outline: TCP/UDP Socket Communication, Message Queue, Concurrency programming, HTTP(s)",
+        grade: "Grade: A+",
+        hw1: "Develop the simple game that a server can handle multiple clients based on TCP (Concurrency programming)",
+        hw2: "Develop the simple game using Flask, SQLite",
+      },
+      cv: {
+        header: "Computer Vision",
+        duration: "(Fall, 2023)",
+        github: "Github",
+        outline:
+          "Outline: Classical CV Algorithm such as canny edge detection, feature detection(SIFT), etc.",
+        grade: "Grade: A+",
+        hw1: "Develop the algorithm that finds checker board in a given image using Canny, k-NN, etc.",
+        hw2: "Create a program that finds the Empire State building in a given image using YOLO, SIFT, etc.",
+      },
+      os: {
+        header: "Operating System",
+        duration: "(Fall, 2023)",
+        github: "Github",
+        outline:
+          "Outline: Memory/disk management, scheduler, add/modify xv6 functions, ext2 hand tracking, etc.",
+        grade: "Grade: A+",
+        hw: "Add custom scheduler and system calls to xv6, Modify xv6's file structure. (3-depth indirect addressing, support 1GB file)",
+      },
+      lsp: {
+        header: "Linux System Programming",
+        duration: "(Spring, 2023)",
+        github: "Github",
+        outline:
+          "Outline: C Programming, Linux system call, concurrent programming (thread/mutex), etc.",
+        grade: "Grade: A+ (First rank in Lecture)",
+        hw: "Develop directory monitoring program, file backup/restore program, programming judge program.",
       },
     },
   },

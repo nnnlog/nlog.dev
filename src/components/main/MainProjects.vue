@@ -1,4 +1,4 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="header" style="margin-top: 6rem">
@@ -17,9 +17,9 @@
       </template>
     </i18n-t>
     <li class="bold">
-      <router-link to="/project" class="link">
+      <router-link class="link" to="/project">
         {{ $t("main.project.link")
-        }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+        }}<mdicon height="1.5rem" name="arrow-right" width="1.5rem" />
       </router-link>
     </li>
   </ul>

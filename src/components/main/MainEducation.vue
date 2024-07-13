@@ -1,18 +1,18 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="header" style="margin-top: 6rem">
     {{ $t("main.education.header") }}
   </div>
   <i18n-t
-    keypath="main.education.bachelor.header"
     class="sub-header detail"
+    keypath="main.education.bachelor.header"
     tag="div"
   >
     <template #duration>
       <i18n-t
-        keypath="main.education.bachelor.duration"
         class="detail-value"
+        keypath="main.education.bachelor.duration"
         tag="div"
       >
         <template #expect>
@@ -23,12 +23,14 @@
   </i18n-t>
   <ul>
     <i18n-t
+      class="detail semi-bold"
       keypath="main.education.bachelor.grade"
       tag="li"
-      class="detail semi-bold"
     >
       <template #rank>
-        <div class="detail-value">{{ $t("main.education.bachelor.rank") }}</div>
+        <span class="detail-value">{{
+          $t("main.education.bachelor.rank")
+        }}</span>
       </template>
     </i18n-t>
     <li class="none">
@@ -39,55 +41,55 @@
       </ul>
     </li>
     <i18n-t
+      class="detail"
       keypath="main.education.bachelor.undergraduate"
       tag="li"
-      class="detail"
     >
       <template #duration>
-        <div class="detail-value">
+        <span class="detail-value">
           {{ $t("main.education.bachelor.undergraduate_duration") }}
-        </div>
+        </span>
       </template>
     </i18n-t>
     <i18n-t
+      class="detail"
       keypath="main.education.bachelor.sccc.header"
       tag="li"
-      class="detail"
     >
       <template #duration>
-        <div class="detail-value">
+        <span class="detail-value">
           {{ $t("main.education.bachelor.sccc.duration") }}
-        </div>
+        </span>
       </template>
     </i18n-t>
     <li class="none">
       <ul>
         <i18n-t keypath="main.education.bachelor.sccc.study" tag="li">
           <template #duration>
-            <div class="detail-value">
+            <span class="detail-value">
               {{ $t("main.education.bachelor.sccc.duration") }}
-            </div>
+            </span>
           </template>
         </i18n-t>
         <i18n-t keypath="main.education.bachelor.sccc.scon" tag="li">
           <template #duration>
-            <div class="detail-value">
+            <span class="detail-value">
               {{ $t("main.education.bachelor.sccc.scon_duration") }}
-            </div>
+            </span>
           </template>
         </i18n-t>
         <li class="detail">
           <a class="link" href="https://sccc.kr" target="_blank">
-            <div>{{ $t("main.education.bachelor.sccc.homepage") }}</div>
-            <mdicon width="1rem" height="1rem" name="open-in-new" class="up" />
+            <span>{{ $t("main.education.bachelor.sccc.homepage") }}</span>
+            <mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
           </a>
         </li>
       </ul>
     </li>
     <li class="semi-bold">
-      <router-link to="/activity/univ" class="link">
+      <router-link class="link" to="/activity/univ">
         {{ $t("main.education.bachelor.completed_subject")
-        }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+        }}<mdicon height="1.5rem" name="arrow-right" width="1.5rem" />
       </router-link>
     </li>
   </ul>

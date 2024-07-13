@@ -1,4 +1,4 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="header">{{ $t("main.information.header") }}</div>
@@ -40,18 +40,18 @@
       <div class="info-key">{{ $t("main.information.icpc.key") }}</div>
       <div class="info-value">
         <a
-          href="https://icpc.global/ICPCID/IZEFL2OKWZE1"
           class="link"
+          href="https://icpc.global/ICPCID/IZEFL2OKWZE1"
           target="_blank"
-          >{{ $t("main.information.icpc.value")
-          }}<mdicon width="1rem" height="1rem" name="open-in-new" class="up" />
+          >{{ $t("main.information.icpc.value") }}
+          <mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .information {
   display: flex;
   flex-direction: column;

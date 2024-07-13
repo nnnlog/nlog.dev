@@ -148,7 +148,7 @@ export default {
           desc3: "컴퓨터비전",
         },
         desc2: "컴퓨터학부 문제해결 소모임 SCCC 회장 및 임원",
-        view: "학교에서의 자세한 활동 보기",
+        view: "이수한 주요 교과목의 자세한 내용 보기",
       },
     },
     algorithm: {
@@ -256,6 +256,53 @@ export default {
         },
       },
     },
+    univ: {
+      header: "숭실대학교 주요 이수 과목",
+      pl: {
+        header: "프로그래밍언어",
+        duration: "(2024-1학기)",
+        github: "Github",
+        hw: "EBNF에 기반하여 Recursive-Descent 구조를 사용한 간단한 파서 개발",
+      },
+      network: {
+        header: "네트워크프로그래밍",
+        duration: "(2024-1학기)",
+        github: "Github",
+        outline:
+          "교과목 개요: TCP/UDP 소켓 통신, 메세지 큐, 동시성 프로그래밍, HTTP(s)",
+        grade: "성적: A+",
+        hw1: "TCP 위에서 동작하며, 한 서버가 한번에 여러 개의 클라이언트를 처리할 수 있는 간단한 게임 서버 개발",
+        hw2: "Flask, SQLite를 사용한 게임 개발",
+      },
+      cv: {
+        header: "컴퓨터비전",
+        duration: "(2023-2학기)",
+        github: "Github",
+        outline:
+          "교과목 개요: Canny 에지 검출기, 특징점 검출(SIFT)와 같은 고전적인 컴퓨터비전 알고리즘 학습",
+        grade: "성적: A+",
+        hw1: "Canny, k-NN 등을 사용하여 주어진 이미지 내에서 체커보드를 찾는 알고리즘 개발",
+        hw2: "YOLO, SIFT 등을 사용하여 주어진 이미지 내에서 엠파이어 스테이트 빌딩을 찾는 프로그램 작성",
+      },
+      os: {
+        header: "운영체제",
+        duration: "(2023-2학기)",
+        github: "Github",
+        outline:
+          "교과목 개요: 메모리/디스크 관리, 스케쥴러, xv6 함수 추가 및 수정, ext2 손 추적",
+        grade: "성적: A+",
+        hw: "xv6에 커스텀 스케쥴러 및 시스템 콜 추가, xv6 파일 구조 수정 (3중 간접 주소, 최대 1GB 파일 지원)",
+      },
+      lsp: {
+        header: "리눅스시스템프로그래밍",
+        duration: "(2023-1학기)",
+        github: "Github",
+        outline:
+          "교과목 개요: C 프로그래밍, 리눅스 시스템 콜, 동시성 프로그래밍 (thread/mutex) 등",
+        grade: "성적: A+ (1등)",
+        hw: "디렉터리 모니터링 프로그램, 파일 백업/복원 프로그램, 프로그래밍 채점 프로그램 개발",
+      },
+    },
   },
   project: {
     index: {
@@ -276,7 +323,7 @@ export default {
         duration: "(2024.02 ~ )",
         description:
           "여러 필터를 사용해 숭실대학교 개설 과목을 조회할 수 있는 웹 페이지",
-        tech: "Technology: node.js(hono.js, playwright), solid.js, GraphQL, SQLite",
+        tech: "사용 기술: node.js(hono.js, playwright), solid.js, GraphQL, SQLite",
         scale: "개인 프로젝트",
         web: "Web Page",
         github: "Github",
@@ -286,7 +333,7 @@ export default {
         duration: "(2022.06 ~ 2022.12)",
         description:
           "(SW마에스트로 팀 프로젝트) 알고리즘 대회를 준비하는 웹 플랫폼",
-        tech: "Technology: Vue.js, JWT, Github CI/CD",
+        tech: "사용 기술: Vue.js, JWT, Github CI/CD",
         scale: "팀 프로젝트 (역할: 프론트엔드)",
         github: "Github (프론트엔드)",
       },

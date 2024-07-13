@@ -1,10 +1,10 @@
 <template>
   <section class="content-hr"></section>
   <section class="content-main">
-    <i18n-t keypath="notfound.message" tag="div" class="not-found">
+    <i18n-t class="not-found" keypath="notfound.message" tag="div">
       <template v-slot:back>
-        <a @click="$router.go(-1)" class="link">
-          <mdicon width="1.5rem" height="1.5rem" name="arrow-left" />
+        <a class="link" @click="$router.go(-1)">
+          <mdicon height="1.5rem" name="arrow-left" width="1.5rem" />
           {{ $t("notfound.back") }}
         </a>
       </template>

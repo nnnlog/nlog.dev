@@ -8,9 +8,9 @@
       <li>{{ $t("activity.index.algorithm.desc2") }}</li>
       <li>{{ $t("activity.index.algorithm.desc3") }}</li>
       <li>
-        <router-link to="/activity/algorithm" class="link bold">
+        <router-link class="link bold" to="/activity/algorithm">
           {{ $t("activity.index.algorithm.view")
-          }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+          }}<mdicon height="1.5rem" name="arrow-right" width="1.5rem" />
         </router-link>
       </li>
     </ul>
@@ -30,9 +30,9 @@
         {{ $t("activity.index.ssu.desc2") }}
       </li>
       <li>
-        <router-link to="/activity/univ" class="link bold">
+        <router-link class="link bold" to="/activity/univ">
           {{ $t("activity.index.ssu.view")
-          }}<mdicon width="1.5rem" height="1.5rem" name="arrow-right" />
+          }}<mdicon height="1.5rem" name="arrow-right" width="1.5rem" />
         </router-link>
       </li>
     </ul>
