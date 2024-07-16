@@ -164,7 +164,7 @@ body {
   box-shadow: 0 calc(-1 * styles.$hr-height) 40px 2px rgba(123, 100, 240, 0.25);
 
   &.bottom {
-    margin-top: 90vh;
+    margin-top: 93vh;
   }
 
   &::after {
