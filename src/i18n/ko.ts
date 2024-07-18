@@ -6,7 +6,7 @@ export default {
   },
   loading: "페이지 로딩하는 중...",
   nav: {
-    cv: "이력서",
+    cv: "이력",
     activity: "활동",
     project: "프로젝트",
   },
