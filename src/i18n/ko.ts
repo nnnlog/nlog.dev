@@ -22,7 +22,7 @@ export default {
   main: {
     career: {
       header: "경력",
-      danggn: {
+      daangn: {
         header: "당근마켓, 소프트웨어 엔지니어 인턴 (백엔드){duration}",
         duration: "(2024.08 ~ 2024.11)",
         tbd: "추가 예정",

@@ -22,8 +22,8 @@ export default {
   main: {
     career: {
       header: "Career",
-      danggn: {
-        header: "Danggn Market, Software Engineer Intern (Backend){duration}",
+      daangn: {
+        header: "Karrot Market, Software Engineer Intern (Backend){duration}",
         duration: "(2024.08 ~ 2024.11)",
         tbd: "TBD",
       },

@@ -6,16 +6,16 @@
   </div>
   <i18n-t
     class="sub-header detail"
-    keypath="main.career.danggn.header"
+    keypath="main.career.daangn.header"
     tag="div"
   >
     <template #duration>
       <span class="detail-value">
-        {{ $t("main.career.danggn.duration") }}
+        {{ $t("main.career.daangn.duration") }}
       </span>
     </template>
   </i18n-t>
   <ul>
-    <li class="detail semi-bold">{{ $t("main.career.danggn.tbd") }}</li>
+    <li class="detail semi-bold">{{ $t("main.career.daangn.tbd") }}</li>
   </ul>
 </template>
