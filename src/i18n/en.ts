@@ -22,10 +22,19 @@ export default {
   main: {
     career: {
       header: "Career",
-      daangn: {
-        header: "Karrot Market, Software Engineer Intern (Backend){duration}",
-        duration: "(2024.08 ~ 2024.11)",
+      moloco: {
+        header: "MOLOCO, Software Engineer Intern{duration}",
+        duration: "(2024.11 - 2025.02)",
         tbd: "TBD",
+      },
+      daangn: {
+        header: "Karrot, Software Engineer Intern (Backend){duration}",
+        duration: "(2024.08 - 2024.11)",
+        details: [
+          "Develop a service that aggregates data (store information, reviews, coupons, etc.) created by the Local Profile Team and saves it into Elastic Search.",
+          "Develop a service that provides a search interface based on data saved in Elastic Search.",
+          "Technology : Spring Boot, Kafka, gRPC, MySQL, BigQuery, Kotlin",
+        ],
       },
     },
     education: {
@@ -33,18 +42,18 @@ export default {
       bachelor: {
         header:
           "Bachelor, Computer Science & Engineering, Soongsil University{duration}",
-        duration: "(2022.03 ~ 2025.02 {expect})",
+        duration: "(2022.03 - 2025.02 {expect})",
         graduate_expected: "Expected to graduate",
         grade: "GPA 4.32 / 4.50{rank}",
         rank: "(Class Rank 3/142)",
         major_gpa: "Major GPA 4.30 / 4.50",
         undergraduate:
           "Undergraduate student in Database Lab, Soongsil University{duration}",
-        undergraduate_duration: "(2022.03 ~ )",
+        undergraduate_duration: "(2022.03 - )",
         sccc: {
           header:
             "President & Executives of SCCC, Problem Solving Club in CSE department{duration}",
-          duration: "(2023.03 ~ )",
+          duration: "(2023.03 - )",
           study:
             "Open study for algorithms, basic C language, and logical circuit (digital engineering)",
           scon: "Executive Director of 2023 Soongsil University Programming Contest{duration}",
@@ -58,7 +67,7 @@ export default {
       header: "Experience",
       algorithm: {
         header: "Participating on Algorithm Contests{duration}",
-        duration: "(2019 ~ )",
+        duration: "(2019 - )",
         icpc: {
           icpcwf: "Honorable mention in the 47{th} ICPC World Finals{duration}",
           icpcwf_duration: "(2024.04, Luxor, Egypt)",
@@ -69,13 +78,13 @@ export default {
         },
         koi_ta: {
           header: "TA at Korea Olympiad in Informatics Committee{duration}",
-          duration: "(2023.08 ~ )",
+          duration: "(2023.08 - )",
           koi2024first:
             "Coordinator of Korea Olympiad in Informatics 2024 1{st} Programming Contest{duration}",
           koi2024first_duration: "(2024.05)",
           ioi_camp:
             "TA at Training Camp of International Olympiad in Informatics, Republic of Korea{duration}",
-          ioi_camp_duration: "(2023.08 ~ )",
+          ioi_camp_duration: "(2023.08 - )",
         },
         koi_award: {
           first_general:
@@ -85,26 +94,14 @@ export default {
         view_all: "View all experiences related to algorithm",
       },
       software: {
-        header: "Completed Software Programs{duration}",
-        duration: "(2020 ~ )",
+        header: "Software Activities{duration}",
+        duration: "(2020 - )",
         soma: {
           header: "Software Maestro 13{th}{duration}",
-          duration: "(2022.04 ~ 2022.11)",
+          duration: "(2022.04 - 2022.11)",
           project:
             "Codemap, The web platform for preparing algorithm contests - {detail}",
           project_detail: "View detail of the project",
-        },
-        bob: {
-          header:
-            "BEST OF THE BEST 9{th}, Security product development{duration}",
-          duration: "(2020.07 ~ 2021.03)",
-          award:
-            "Excellence Award in National High School Cyber Security Competition{duration}",
-          award_duration: "(2021.08)",
-        },
-        high_school: {
-          header: "SW-oriented class, Dongnae High School{duration}",
-          duration: "(2020.03 ~ 2022.02)",
         },
       },
     },
@@ -174,6 +171,9 @@ export default {
         icpc: {
           header: "ICPC",
           description: "(International Collegiate Programming Contest)",
+          icpc2024:
+            "Honorable mention in the 2024 ICPC Asia Seoul Regional{duration}",
+          icpc2024_duration: "(2024.11, Seoul, Republic of Korea)",
           icpcwf: "Honorable mention in the 47{th} ICPC World Finals{duration}",
           icpcwf_duration: "(2024.04, Luxor, Egypt)",
           icpc2023:
@@ -256,28 +256,28 @@ export default {
           header: "KOI Committee{description}",
           description: "(Korea Olympiad in Informatics Committee)",
           ioi_camp: "TA of IOI Training Camp (Summer/Winter School){duration}",
-          ioi_camp_duration: "(2023.08 ~ , Republic of Korea)",
+          ioi_camp_duration: "(2023.08 - , Republic of Korea)",
         },
         sinchon: {
           header: "ICPC Sinchon",
           summer2024:
             "Novice Lecturer of 2024 ICPC Sinchon Summer Camp{duration}",
-          summer2024_duration: "(2024.07 ~ 2024.08)",
+          summer2024_duration: "(2024.07 - 2024.08)",
           winter2024:
             "Novice Lecturer of 2024 ICPC Sinchon Winter Camp{duration}",
-          winter2024_duration: "(2024.01 ~ 2024.02)",
+          winter2024_duration: "(2024.01 - 2024.02)",
           summer2023:
             "Novice Lecturer of 2023 ICPC Sinchon Summer Camp{duration}",
-          summer2023_duration: "(2023.07 ~ 2023.08)",
+          summer2023_duration: "(2023.07 - 2023.08)",
           material: "Lecture Materials (Korean)",
         },
         sccc: {
           header: "SCCC{description}",
           description: "(Problem Solving Club in CSE, Soongsil University)",
           study2024: "Lecturer of Basic C Language Study{duration}",
-          study2024_duration: "(2024.03 ~ 2024.05)",
+          study2024_duration: "(2024.03 - 2024.05)",
           study2023: "Lecturer of Group Study(Algorithm/C Language){duration}",
-          study2023_duration: "(2023.03 ~ 2023.05)",
+          study2023_duration: "(2023.03 - 2023.05)",
         },
       },
     },
@@ -334,7 +334,7 @@ export default {
       header: "Project",
       ssurade: {
         header: "SSUrade",
-        duration: "(2022.06 ~ )",
+        duration: "(2022.06 - )",
         description:
           "An application that inquiry Soongsil University's information such as grade, attendance, etc.",
         tech: "Technology: Flutter, Javascript",
@@ -346,7 +346,7 @@ export default {
       },
       ssullabus: {
         header: "SSUllabus",
-        duration: "(2024.02 ~ )",
+        duration: "(2024.02 - )",
         description:
           "Web Page that finds Soongsil Unviersity's opened subject with various filter.",
         tech: "Technology: node.js(hono.js, playwright), solid.js, GraphQL, SQLite",
@@ -356,7 +356,7 @@ export default {
       },
       codemap: {
         header: "Codemap",
-        duration: "(2022.06 ~ 2022.12)",
+        duration: "(2022.06 - 2022.12)",
         description:
           "(Software Maestro Team Project) Web Page for preparing algorithm contest.",
         tech: "Technology: Vue.js, JWT, Github CI/CD",
@@ -366,7 +366,7 @@ export default {
     },
     ssurade: {
       header: "SSUrade",
-      duration: "(2022.06 ~ )",
+      duration: "(2022.06 - )",
       description:
         "An application that inquiry Soongsil University's information such as grade, attendance, etc.",
       tech: "Technology: Flutter, Javascript",

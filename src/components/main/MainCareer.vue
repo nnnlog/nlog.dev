@@ -6,7 +6,22 @@
   </div>
   <i18n-t
     class="sub-header detail"
+    keypath="main.career.moloco.header"
+    tag="div"
+  >
+    <template #duration>
+      <span class="detail-value">
+        {{ $t("main.career.moloco.duration") }}
+      </span>
+    </template>
+  </i18n-t>
+  <ul>
+    <li class="detail semi-bold">{{ $t("main.career.moloco.tbd") }}</li>
+  </ul>
+  <i18n-t
+    class="sub-header detail"
     keypath="main.career.daangn.header"
+    style="margin-top: 2rem"
     tag="div"
   >
     <template #duration>
@@ -16,6 +31,12 @@
     </template>
   </i18n-t>
   <ul>
-    <li class="detail semi-bold">{{ $t("main.career.daangn.tbd") }}</li>
+    <li
+      v-for="item in $tm('main.career.daangn.details')"
+      class="detail"
+      :key="item"
+    >
+      {{ $rt(item) }}
+    </li>
   </ul>
 </template>

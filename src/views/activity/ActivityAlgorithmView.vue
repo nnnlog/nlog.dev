@@ -18,6 +18,21 @@
       <li class="none">
         <ul>
           <i18n-t
+            class="detail"
+            keypath="activity.algorithm.participate_contest.icpc.icpc2024"
+            tag="li"
+          >
+            <template #duration>
+              <span class="detail-value">
+                {{
+                  $t(
+                    "activity.algorithm.participate_contest.icpc.icpc2024_duration"
+                  )
+                }}
+              </span>
+            </template>
+          </i18n-t>
+          <i18n-t
             class="detail semi-bold"
             keypath="activity.algorithm.participate_contest.icpc.icpcwf"
             tag="li"

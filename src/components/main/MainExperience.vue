@@ -151,48 +151,5 @@
         </i18n-t>
       </ul>
     </li>
-    <i18n-t
-      class="detail"
-      keypath="main.experience.software.bob.header"
-      tag="li"
-    >
-      <template #th>
-        <sup>{{ $t("_number_format.th") }}</sup>
-      </template>
-      <template #duration>
-        <span class="detail-value">
-          {{ $t("main.experience.software.bob.duration") }}
-        </span>
-      </template>
-    </i18n-t>
-    <li class="none">
-      <ul>
-        <i18n-t
-          class="detail"
-          keypath="main.experience.software.bob.award"
-          tag="li"
-        >
-          <template #th>
-            <sup>{{ $t("_number_format.th") }}</sup>
-          </template>
-          <template #duration>
-            <span class="detail-value">
-              {{ $t("main.experience.software.bob.award_duration") }}
-            </span>
-          </template>
-        </i18n-t>
-      </ul>
-    </li>
-    <i18n-t
-      class="detail"
-      keypath="main.experience.software.high_school.header"
-      tag="li"
-    >
-      <template #duration>
-        <span class="detail-value">
-          {{ $t("main.experience.software.high_school.duration") }}
-        </span>
-      </template>
-    </i18n-t>
   </ul>
 </template>

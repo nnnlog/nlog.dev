@@ -22,26 +22,35 @@ export default {
   main: {
     career: {
       header: "경력",
-      daangn: {
-        header: "당근마켓, 소프트웨어 엔지니어 인턴 (백엔드){duration}",
-        duration: "(2024.08 ~ 2024.11)",
+      moloco: {
+        header: "몰로코, 소프트웨어 엔지니어 인턴{duration}",
+        duration: "(2024.11 - 2025.02)",
         tbd: "추가 예정",
+      },
+      daangn: {
+        header: "당근, 소프트웨어 엔지니어 인턴 (백엔드){duration}",
+        duration: "(2024.08 - 2024.11)",
+        details: [
+          "로컬프로필 팀에서 만들어지는 데이터(업체 정보, 리뷰, 쿠폰 등)를 aggregate하여 Elastic Search로 적재하는 서비스 개발",
+          "Elastic Search에 적재한 데이터를 바탕으로 검색 인터페이스를 제공하는 서비스 개발",
+          "기술 : Spring Boot, Kafka, gRPC, MySQL, BigQuery, Kotlin",
+        ],
       },
     },
     education: {
       header: "학력",
       bachelor: {
         header: "숭실대학교 컴퓨터학부{duration}",
-        duration: "(2022.03 ~ 2025.02 {expect})",
+        duration: "(2022.03 - 2025.02 {expect})",
         graduate_expected: "졸업 예정",
         grade: "평점 4.32 / 4.50{rank}",
         rank: "(석차 3/142)",
         major_gpa: "전공 평점 4.30 / 4.50",
         undergraduate: "숭실대학교 데이터베이스 연구실 학부연구생{duration}",
-        undergraduate_duration: "(2022.03 ~ )",
+        undergraduate_duration: "(2022.03 - )",
         sccc: {
           header: "컴퓨터학부 문제해결 소모임 SCCC 회장 및 임원{duration}",
-          duration: "(2023.03 ~ )",
+          duration: "(2023.03 - )",
           study: "알고리즘, 기초 C언어, 논리회로(디지털 공학) 스터디 운영",
           scon: "2023 숭실대학교 프로그래밍 대회 총괄{duration}",
           scon_duration: "(2023.04)",
@@ -54,7 +63,7 @@ export default {
       header: "경험",
       algorithm: {
         header: "알고리즘 대회 참가{duration}",
-        duration: "(2019 ~ )",
+        duration: "(2019 - )",
         icpc: {
           icpcwf: "제47회 ICPC World Finals Honorable mention{duration}",
           icpcwf_duration: "(2024.04, 룩소르, 이집트)",
@@ -65,12 +74,12 @@ export default {
         },
         koi_ta: {
           header: "한국정보올림피아드 위원회 코치{duration}",
-          duration: "(2023.08 ~ )",
+          duration: "(2023.08 - )",
           koi2024first:
             "한국정보올림피아드 2024년 1차 대회 프로그래밍 코디네이터{duration}",
           koi2024first_duration: "(2024.05)",
           ioi_camp: "국제정보올림피아드 교육생(계절학교) 코치{duration}",
-          ioi_camp_duration: "(2023.08 ~ )",
+          ioi_camp_duration: "(2023.08 - )",
         },
         koi_award: {
           first_general:
@@ -80,23 +89,13 @@ export default {
         view_all: "알고리즘 관련 모든 활동 보기",
       },
       software: {
-        header: "이수한 소프트웨어 활동{duration}",
-        duration: "(2020 ~ )",
+        header: "소프트웨어 활동{duration}",
+        duration: "(2020 - )",
         soma: {
           header: "SW마에스트로 13기{duration}",
-          duration: "(2022.04 ~ 2022.11)",
+          duration: "(2022.04 - 2022.11)",
           project: "코드맵, 알고리즘 대회 준비를 위한 플랫폼 - {detail}",
           project_detail: "프로젝트 상세 보기",
-        },
-        bob: {
-          header: "BEST OF THE BEST 9기, 보안제품개발{duration}",
-          duration: "(2020.07 ~ 2021.03)",
-          award: "전국 사이버 보안 경진대회 우수상 (안동경찰서장){duration}",
-          award_duration: "(2021.08)",
-        },
-        high_school: {
-          header: "동래고등학교 SW중점 학급{duration}",
-          duration: "(2020.03 ~ 2022.02)",
         },
       },
     },
@@ -166,6 +165,8 @@ export default {
         icpc: {
           header: "ICPC",
           description: "(국제 대학생 프로그래밍 경시대회)",
+          icpc2024: "2024 ICPC Asia Seoul Regional Honorable mention{duration}",
+          icpc2024_duration: "(2024.11)",
           icpcwf: "제47회 ICPC World Finals Honorable mention{duration}",
           icpcwf_duration: "(2024.04, 룩소르, 이집트)",
           icpc2023: "2023 ICPC Asia Seoul Regional Honorable mention{duration}",
@@ -242,25 +243,25 @@ export default {
           header: "한국정보올림피아드 위원회{description}",
           description: "",
           ioi_camp: "국제정보올림피아드 교육생(계절학교) 코치 {duration}",
-          ioi_camp_duration: "(2023.08 ~ , 대한민국)",
+          ioi_camp_duration: "(2023.08 - , 대한민국)",
         },
         sinchon: {
           header: "ICPC Sinchon",
           summer2024: "2024 ICPC Sinchon 여름 캠프 초급 강사{duration}",
-          summer2024_duration: "(2024.07 ~ 2024.08)",
+          summer2024_duration: "(2024.07 - 2024.08)",
           winter2024: "2024 ICPC Sinchon 겨울 캠프 초급 강사{duration}",
-          winter2024_duration: "(2024.01 ~ 2024.02)",
+          winter2024_duration: "(2024.01 - 2024.02)",
           summer2023: "2023 ICPC Sinchon 여름 캠프 초급 강사{duration}",
-          summer2023_duration: "(2023.07 ~ 2023.08)",
+          summer2023_duration: "(2023.07 - 2023.08)",
           material: "강의 자료",
         },
         sccc: {
           header: "SCCC{description}",
           description: "(숭실대학교 컴퓨터학부 문제해결 소모임)",
           study2024: "기초 C언어 스터디 강사{duration}",
-          study2024_duration: "(2024.03 ~ 2024.05)",
+          study2024_duration: "(2024.03 - 2024.05)",
           study2023: "그룹 스터디 강사(알고리즘/C언어){duration}",
-          study2023_duration: "(2023.03 ~ 2023.05)",
+          study2023_duration: "(2023.03 - 2023.05)",
         },
       },
     },
@@ -317,7 +318,7 @@ export default {
       header: "프로젝트",
       ssurade: {
         header: "SSUrade",
-        duration: "(2022.06 ~ )",
+        duration: "(2022.06 - )",
         description: "성적, 출결 등 학사 정보를 조회하는 애플리케이션",
         tech: "사용 기술: Flutter, Javascript",
         scale: "개인 프로젝트",
@@ -328,7 +329,7 @@ export default {
       },
       ssullabus: {
         header: "SSUllabus",
-        duration: "(2024.02 ~ )",
+        duration: "(2024.02 - )",
         description:
           "여러 필터를 사용해 숭실대학교 개설 과목을 조회할 수 있는 웹 페이지",
         tech: "사용 기술: node.js(hono.js, playwright), solid.js, GraphQL, SQLite",
@@ -338,7 +339,7 @@ export default {
       },
       codemap: {
         header: "Codemap",
-        duration: "(2022.06 ~ 2022.12)",
+        duration: "(2022.06 - 2022.12)",
         description:
           "(SW마에스트로 팀 프로젝트) 알고리즘 대회를 준비하는 웹 플랫폼",
         tech: "사용 기술: Vue.js, JWT, Github CI/CD",
@@ -348,7 +349,7 @@ export default {
     },
     ssurade: {
       header: "SSUrade",
-      duration: "(2022.06 ~ )",
+      duration: "(2022.06 - )",
       description: "성적, 출결 등 학사 정보를 조회하는 애플리케이션",
       tech: "사용 기술: Flutter, Javascript",
       scale: "개인 프로젝트",
