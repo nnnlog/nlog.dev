@@ -7,8 +7,8 @@ export default {
   loading: "Loading page...",
   nav: {
     cv: "CV",
-    activity: "Activity",
-    project: "Project",
+    activity: "Activities",
+    project: "Projects",
   },
   intro: {
     name: "Chansol Park",
@@ -20,51 +20,53 @@ export default {
     back: "Go back",
   },
   main: {
-    career: {
-      header: "Career",
+    employments: {
+      header: "Employments",
       moloco: {
-        header: "MOLOCO, Software Engineer Intern{duration}",
+        header: "Moloco, Software Engineer Intern{duration}",
         duration: "(2024.11 - 2025.02)",
-        tbd: "TBD",
+        details: [
+          "Developed services for partner companies, including implementing machine learning dataset pipelines and ingesting their first-party data for adding conditions to ad targeting.",
+        ],
       },
-      daangn: {
-        header: "Karrot, Software Engineer Intern (Backend){duration}",
+      karrot: {
+        header: "Karrot Market, Software Engineer Intern (Backend){duration}",
         duration: "(2024.08 - 2024.11)",
         details: [
-          "Develop a service that aggregates data (store information, reviews, coupons, etc.) created by the Local Profile Team and saves it into Elastic Search.",
-          "Develop a service that provides a search interface based on data saved in Elastic Search.",
-          "Technology : Spring Boot, Kafka, gRPC, MySQL, BigQuery, Kotlin",
+          "Developed the Content Curator service that serves data generated from several services to other teams.",
+          "Developed a cache layer backed by a relational database to efficiently refresh newly received data from Kafka and store cache-missed data from gRPC. This optimization reduces gRPC call counts from 60–70 per minute to less than 1 per minute.",
+          "Implemented an integration test to enhance reliability and detect potential errors early in the development stage.",
         ],
       },
     },
-    education: {
-      header: "Education",
+    educations: {
+      header: "Educations",
       bachelor: {
         header:
           "Bachelor, Computer Science & Engineering, Soongsil University{duration}",
-        duration: "(2022.03 - 2025.02 {expect})",
-        graduate_expected: "Expected to graduate",
-        grade: "GPA 4.32 / 4.50{rank}",
-        rank: "(Class Rank 3/142)",
-        major_gpa: "Major GPA 4.30 / 4.50",
+        duration: "(2022.03 - 2025.02)",
+        grade: "GPA 4.29 / 4.50{rank}",
+        rank: "(Graduation Rank 2/77)",
+        scholarship:
+          "National Scholarship for Outstanding Students in Science and Engineering{duration}",
+        scholarship_duration: "(2024.11)",
         undergraduate:
           "Undergraduate student in Database Lab, Soongsil University{duration}",
-        undergraduate_duration: "(2022.03 - )",
+        undergraduate_duration: "(2022.03 - 2025.02)",
         sccc: {
           header:
-            "President & Executives of SCCC, Problem Solving Club in CSE department{duration}",
-          duration: "(2023.03 - )",
+            "President & Executives of SCCC, Problem Solving Club in CSE department",
           study:
-            "Open study for algorithms, basic C language, and logical circuit (digital engineering)",
-          scon: "Executive Director of 2023 Soongsil University Programming Contest{duration}",
+            "Operate study for algorithms, basic C language, and logical circuit (digital engineering)",
+          scon: "Director of 2023 Soongsil University Programming Contest{duration}",
           scon_duration: "(2023.04)",
           homepage: "SCCC Homepage",
         },
         completed_subject: "View completed subjects' summary in university",
       },
     },
-    experience: {
-      header: "Experience",
+    activities: {
+      header: "Activities",
       algorithm: {
         header: "Participating on Algorithm Contests{duration}",
         duration: "(2019 - )",
@@ -84,7 +86,7 @@ export default {
           koi2024first_duration: "(2024.05)",
           ioi_camp:
             "TA at Training Camp of International Olympiad in Informatics, Republic of Korea{duration}",
-          ioi_camp_duration: "(2023.08 - )",
+          ioi_camp_duration: "(2023.08 - 2024.08)",
         },
         koi_award: {
           first_general:
@@ -128,23 +130,25 @@ export default {
         key: "Github",
         value: "nnnlog",
       },
+      linkedin: {
+        key: "LinkedIn",
+        value: "Open",
+      },
       icpc: {
         key: "ICPCID",
         value: "Open",
       },
     },
-    project: {
-      header: "Project",
-      text: "{key}: Javascript/Typescript ({node}, express, {vue}), Flutter, C++ (Algorithm)",
+    projects: {
+      header: "Projects",
+      text: "{key}: Javascript/Typescript, Flutter, C++",
       key: "Mostly using a Language & Framework",
-      node: "Node.js",
-      vue: "Vue.js",
       link: "View all projects",
     },
   },
-  activity: {
+  activities: {
     index: {
-      header: "Activity",
+      header: "Activities",
       algorithm: {
         header: "in Algorithm Field",
         desc1: "Participating on Contest",

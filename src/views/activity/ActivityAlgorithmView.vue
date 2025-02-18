@@ -1,32 +1,32 @@
 <template>
   <section class="content-hr"></section>
   <section class="content-main">
-    <div class="header">{{ $t("activity.algorithm.header") }}</div>
+    <div class="header">{{ $t("activities.algorithm.header") }}</div>
     <div class="sub-header">
-      {{ $t("activity.algorithm.participate_contest.header") }}
+      {{ $t("activities.algorithm.participate_contest.header") }}
     </div>
     <ul>
       <li class="detail semi-bold">
         <a class="link" href="https://icpc.global/" target="_blank"
-          >{{ $t("activity.algorithm.participate_contest.icpc.header")
+          >{{ $t("activities.algorithm.participate_contest.icpc.header")
           }}<mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
         <span class="detail-value">
-          {{ $t("activity.algorithm.participate_contest.icpc.description") }}
+          {{ $t("activities.algorithm.participate_contest.icpc.description") }}
         </span>
       </li>
       <li class="none">
         <ul>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.participate_contest.icpc.icpc2024"
+            keypath="activities.algorithm.participate_contest.icpc.icpc2024"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
                 {{
                   $t(
-                    "activity.algorithm.participate_contest.icpc.icpc2024_duration"
+                    "activities.algorithm.participate_contest.icpc.icpc2024_duration"
                   )
                 }}
               </span>
@@ -34,7 +34,7 @@
           </i18n-t>
           <i18n-t
             class="detail semi-bold"
-            keypath="activity.algorithm.participate_contest.icpc.icpcwf"
+            keypath="activities.algorithm.participate_contest.icpc.icpcwf"
             tag="li"
           >
             <template #th>
@@ -44,7 +44,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activity.algorithm.participate_contest.icpc.icpcwf_duration"
+                    "activities.algorithm.participate_contest.icpc.icpcwf_duration"
                   )
                 }}
               </span>
@@ -52,14 +52,14 @@
           </i18n-t>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.participate_contest.icpc.icpc2023"
+            keypath="activities.algorithm.participate_contest.icpc.icpc2023"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
                 {{
                   $t(
-                    "activity.algorithm.participate_contest.icpc.icpc2023_duration"
+                    "activities.algorithm.participate_contest.icpc.icpc2023_duration"
                   )
                 }}
               </span>
@@ -67,19 +67,21 @@
           </i18n-t>
           <i18n-t
             class="detail semi-bold"
-            keypath="activity.algorithm.participate_contest.icpc.icpc2022"
+            keypath="activities.algorithm.participate_contest.icpc.icpc2022"
             tag="li"
           >
             <template #rank>
               <sup>{{
-                $t("activity.algorithm.participate_contest.icpc.icpc2022_rank")
+                $t(
+                  "activities.algorithm.participate_contest.icpc.icpc2022_rank"
+                )
               }}</sup>
             </template>
             <template #duration>
               <span class="detail-value">
                 {{
                   $t(
-                    "activity.algorithm.participate_contest.icpc.icpc2022_duration"
+                    "activities.algorithm.participate_contest.icpc.icpc2022_duration"
                   )
                 }}
               </span>
@@ -91,7 +93,7 @@
               href="https://icpc.global/ICPCID/IZEFL2OKWZE1"
               target="_blank"
             >
-              {{ $t("activity.algorithm.participate_contest.icpc.icpcid")
+              {{ $t("activities.algorithm.participate_contest.icpc.icpcid")
               }}<mdicon
                 class="up"
                 height="1rem"
@@ -104,18 +106,18 @@
       </li>
       <li class="detail semi-bold">
         <a class="link" href="https://koi.or.kr/" target="_blank"
-          >{{ $t("activity.algorithm.participate_contest.koi.header")
+          >{{ $t("activities.algorithm.participate_contest.koi.header")
           }}<mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
         <span class="detail-value">
-          {{ $t("activity.algorithm.participate_contest.koi.description") }}
+          {{ $t("activities.algorithm.participate_contest.koi.description") }}
         </span>
       </li>
       <li class="none">
         <ul>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.participate_contest.koi.koi2"
+            keypath="activities.algorithm.participate_contest.koi.koi2"
             tag="li"
           >
             <template #th>
@@ -127,14 +129,16 @@
             <template #duration>
               <span class="detail-value">
                 {{
-                  $t("activity.algorithm.participate_contest.koi.koi2_duration")
+                  $t(
+                    "activities.algorithm.participate_contest.koi.koi2_duration"
+                  )
                 }}
               </span>
             </template>
           </i18n-t>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.participate_contest.koi.koi1_general"
+            keypath="activities.algorithm.participate_contest.koi.koi1_general"
             tag="li"
           >
             <template #th>
@@ -146,7 +150,9 @@
             <template #duration>
               <span class="detail-value">
                 {{
-                  $t("activity.algorithm.participate_contest.koi.koi1_duration")
+                  $t(
+                    "activities.algorithm.participate_contest.koi.koi1_duration"
+                  )
                 }}
               </span>
             </template>
@@ -154,7 +160,7 @@
         </ul>
       </li>
       <li class="detail semi-bold">
-        {{ $t("activity.algorithm.participate_contest.contest_univ.header") }}
+        {{ $t("activities.algorithm.participate_contest.contest_univ.header") }}
       </li>
       <li class="none">
         <ul>
@@ -162,7 +168,7 @@
             <a class="link" href="https://ucpc.me/" target="_blank">
               {{
                 $t(
-                  "activity.algorithm.participate_contest.contest_univ.ucpc.header"
+                  "activities.algorithm.participate_contest.contest_univ.ucpc.header"
                 )
               }}<mdicon
                 class="up"
@@ -174,7 +180,7 @@
             <span class="detail-value">
               {{
                 $t(
-                  "activity.algorithm.participate_contest.contest_univ.ucpc.description"
+                  "activities.algorithm.participate_contest.contest_univ.ucpc.description"
                 )
               }}
             </span>
@@ -183,7 +189,7 @@
             <ul>
               <i18n-t
                 class="detail"
-                keypath="activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2023"
+                keypath="activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2023"
                 tag="li"
               >
                 <template #th>
@@ -193,7 +199,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2023_duration"
+                        "activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2023_duration"
                       )
                     }}
                   </span>
@@ -201,7 +207,7 @@
               </i18n-t>
               <i18n-t
                 class="detail"
-                keypath="activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2022"
+                keypath="activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2022"
                 tag="li"
               >
                 <template #st>
@@ -211,7 +217,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activity.algorithm.participate_contest.contest_univ.ucpc.ucpc2022_duration"
+                        "activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2022_duration"
                       )
                     }}
                   </span>
@@ -221,14 +227,14 @@
           </li>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.participate_contest.contest_univ.ucpc.icn2023"
+            keypath="activities.algorithm.participate_contest.contest_univ.ucpc.icn2023"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
                 {{
                   $t(
-                    "activity.algorithm.participate_contest.contest_univ.ucpc.icn2023_duration"
+                    "activities.algorithm.participate_contest.contest_univ.ucpc.icn2023_duration"
                   )
                 }}
               </span>
@@ -237,14 +243,14 @@
         </ul>
       </li>
       <li class="detail semi-bold">
-        {{ $t("activity.algorithm.participate_contest.contest_high.header") }}
+        {{ $t("activities.algorithm.participate_contest.contest_high.header") }}
       </li>
       <li class="none">
         <ul>
           <li>
             {{
               $t(
-                "activity.algorithm.participate_contest.contest_high.kookmin.header"
+                "activities.algorithm.participate_contest.contest_high.kookmin.header"
               )
             }}
           </li>
@@ -252,7 +258,7 @@
             <ul>
               <i18n-t
                 class="detail"
-                keypath="activity.algorithm.participate_contest.contest_high.kookmin.kmu2021"
+                keypath="activities.algorithm.participate_contest.contest_high.kookmin.kmu2021"
                 tag="li"
               >
                 <template #th>
@@ -262,7 +268,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activity.algorithm.participate_contest.contest_high.kookmin.kmu2021_duration"
+                        "activities.algorithm.participate_contest.contest_high.kookmin.kmu2021_duration"
                       )
                     }}
                   </span>
@@ -270,7 +276,7 @@
               </i18n-t>
               <i18n-t
                 class="detail"
-                keypath="activity.algorithm.participate_contest.contest_high.kookmin.kmu2020"
+                keypath="activities.algorithm.participate_contest.contest_high.kookmin.kmu2020"
                 tag="li"
               >
                 <template #th>
@@ -280,7 +286,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activity.algorithm.participate_contest.contest_high.kookmin.kmu2020_duration"
+                        "activities.algorithm.participate_contest.contest_high.kookmin.kmu2020_duration"
                       )
                     }}
                   </span>
@@ -291,7 +297,7 @@
           <li>
             {{
               $t(
-                "activity.algorithm.participate_contest.contest_high.busan.header"
+                "activities.algorithm.participate_contest.contest_high.busan.header"
               )
             }}
           </li>
@@ -299,14 +305,14 @@
             <ul>
               <i18n-t
                 class="detail"
-                keypath="activity.algorithm.participate_contest.contest_high.busan.busan2021"
+                keypath="activities.algorithm.participate_contest.contest_high.busan.busan2021"
                 tag="li"
               >
                 <template #duration>
                   <span class="detail-value">
                     {{
                       $t(
-                        "activity.algorithm.participate_contest.contest_high.busan.busan2021_duration"
+                        "activities.algorithm.participate_contest.contest_high.busan.busan2021_duration"
                       )
                     }}
                   </span>
@@ -314,14 +320,14 @@
               </i18n-t>
               <i18n-t
                 class="detail"
-                keypath="activity.algorithm.participate_contest.contest_high.busan.busan2020"
+                keypath="activities.algorithm.participate_contest.contest_high.busan.busan2020"
                 tag="li"
               >
                 <template #duration>
                   <span class="detail-value">
                     {{
                       $t(
-                        "activity.algorithm.participate_contest.contest_high.busan.busan2020_duration"
+                        "activities.algorithm.participate_contest.contest_high.busan.busan2020_duration"
                       )
                     }}
                   </span>
@@ -329,14 +335,14 @@
               </i18n-t>
               <i18n-t
                 class="detail"
-                keypath="activity.algorithm.participate_contest.contest_high.busan.busan2019"
+                keypath="activities.algorithm.participate_contest.contest_high.busan.busan2019"
                 tag="li"
               >
                 <template #duration>
                   <span class="detail-value">
                     {{
                       $t(
-                        "activity.algorithm.participate_contest.contest_high.busan.busan2019_duration"
+                        "activities.algorithm.participate_contest.contest_high.busan.busan2019_duration"
                       )
                     }}
                   </span>
@@ -348,23 +354,23 @@
       </li>
     </ul>
     <div class="sub-header" style="margin-top: 2rem">
-      {{ $t("activity.algorithm.operating.header") }}
+      {{ $t("activities.algorithm.operating.header") }}
     </div>
     <ul>
       <li class="detail semi-bold">
         <a class="link" href="https://koi.or.kr/" target="_blank"
-          >{{ $t("activity.algorithm.operating.koi.header")
+          >{{ $t("activities.algorithm.operating.koi.header")
           }}<mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
         <span class="detail-value">
-          {{ $t("activity.algorithm.operating.koi.description") }}
+          {{ $t("activities.algorithm.operating.koi.description") }}
         </span>
       </li>
       <li class="none">
         <ul>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.operating.koi.koi2024_1"
+            keypath="activities.algorithm.operating.koi.koi2024_1"
             tag="li"
           >
             <template #st>
@@ -372,7 +378,9 @@
             </template>
             <template #duration>
               <span class="detail-value">
-                {{ $t("activity.algorithm.operating.koi.koi2024_1_duration") }}
+                {{
+                  $t("activities.algorithm.operating.koi.koi2024_1_duration")
+                }}
               </span>
             </template>
           </i18n-t>
@@ -380,12 +388,12 @@
       </li>
       <i18n-t
         class="detail semi-bold"
-        keypath="activity.algorithm.operating.scon.header"
+        keypath="activities.algorithm.operating.scon.header"
         tag="li"
       >
         <template #detail>
           <span class="detail-value">
-            {{ $t("activity.algorithm.operating.scon.description") }}
+            {{ $t("activities.algorithm.operating.scon.description") }}
           </span>
         </template>
       </i18n-t>
@@ -393,23 +401,27 @@
         <ul>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.operating.scon.scon2024"
+            keypath="activities.algorithm.operating.scon.scon2024"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
-                {{ $t("activity.algorithm.operating.scon.scon2024_duration") }}
+                {{
+                  $t("activities.algorithm.operating.scon.scon2024_duration")
+                }}
               </span>
             </template>
           </i18n-t>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.operating.scon.scon2023"
+            keypath="activities.algorithm.operating.scon.scon2023"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
-                {{ $t("activity.algorithm.operating.scon.scon2023_duration") }}
+                {{
+                  $t("activities.algorithm.operating.scon.scon2023_duration")
+                }}
               </span>
             </template>
           </i18n-t>
@@ -417,28 +429,28 @@
       </li>
     </ul>
     <div class="sub-header" style="margin-top: 2rem">
-      {{ $t("activity.algorithm.lecture.header") }}
+      {{ $t("activities.algorithm.lecture.header") }}
     </div>
     <ul>
       <li class="detail semi-bold">
         <a class="link" href="https://koi.or.kr/" target="_blank"
-          >{{ $t("activity.algorithm.lecture.koi.header") }}
+          >{{ $t("activities.algorithm.lecture.koi.header") }}
           <mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
         <span class="detail-value">
-          {{ $t("activity.algorithm.lecture.koi.description") }}
+          {{ $t("activities.algorithm.lecture.koi.description") }}
         </span>
       </li>
       <li class="none">
         <ul>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.lecture.koi.ioi_camp"
+            keypath="activities.algorithm.lecture.koi.ioi_camp"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
-                {{ $t("activity.algorithm.lecture.koi.ioi_camp_duration") }}
+                {{ $t("activities.algorithm.lecture.koi.ioi_camp_duration") }}
               </span>
             </template>
           </i18n-t>
@@ -446,7 +458,7 @@
       </li>
       <li>
         <a class="link" href="https://icpc-sinchon.io/" target="_blank"
-          >{{ $t("activity.algorithm.lecture.sinchon.header") }}
+          >{{ $t("activities.algorithm.lecture.sinchon.header") }}
           <mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
       </li>
@@ -454,39 +466,39 @@
         <ul>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.lecture.sinchon.summer2024"
+            keypath="activities.algorithm.lecture.sinchon.summer2024"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
                 {{
-                  $t("activity.algorithm.lecture.sinchon.summer2024_duration")
+                  $t("activities.algorithm.lecture.sinchon.summer2024_duration")
                 }}
               </span>
             </template>
           </i18n-t>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.lecture.sinchon.winter2024"
+            keypath="activities.algorithm.lecture.sinchon.winter2024"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
                 {{
-                  $t("activity.algorithm.lecture.sinchon.winter2024_duration")
+                  $t("activities.algorithm.lecture.sinchon.winter2024_duration")
                 }}
               </span>
             </template>
           </i18n-t>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.lecture.sinchon.summer2023"
+            keypath="activities.algorithm.lecture.sinchon.summer2023"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
                 {{
-                  $t("activity.algorithm.lecture.sinchon.summer2023_duration")
+                  $t("activities.algorithm.lecture.sinchon.summer2023_duration")
                 }}
               </span>
             </template>
@@ -496,7 +508,7 @@
               class="link"
               href="https://github.com/nnnlog/algorithm-lecture"
               target="_blank"
-              >{{ $t("activity.algorithm.lecture.sinchon.material") }}
+              >{{ $t("activities.algorithm.lecture.sinchon.material") }}
               <mdicon
                 class="up"
                 height="1rem"
@@ -509,34 +521,34 @@
       </li>
       <li class="detail">
         <a class="link" href="https://sccc.kr/" target="_blank"
-          >{{ $t("activity.algorithm.lecture.sccc.header")
+          >{{ $t("activities.algorithm.lecture.sccc.header")
           }}<mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
         <span class="detail-value">
-          {{ $t("activity.algorithm.lecture.sccc.description") }}
+          {{ $t("activities.algorithm.lecture.sccc.description") }}
         </span>
       </li>
       <li class="none">
         <ul>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.lecture.sccc.study2024"
+            keypath="activities.algorithm.lecture.sccc.study2024"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
-                {{ $t("activity.algorithm.lecture.sccc.study2024_duration") }}
+                {{ $t("activities.algorithm.lecture.sccc.study2024_duration") }}
               </span>
             </template>
           </i18n-t>
           <i18n-t
             class="detail"
-            keypath="activity.algorithm.lecture.sccc.study2023"
+            keypath="activities.algorithm.lecture.sccc.study2023"
             tag="li"
           >
             <template #duration>
               <span class="detail-value">
-                {{ $t("activity.algorithm.lecture.sccc.study2023_duration") }}
+                {{ $t("activities.algorithm.lecture.sccc.study2023_duration") }}
               </span>
             </template>
           </i18n-t>

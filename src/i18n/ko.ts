@@ -20,37 +20,38 @@ export default {
     back: "돌아가기",
   },
   main: {
-    career: {
-      header: "경력",
+    employments: {
+      header: "경력 사항",
       moloco: {
         header: "몰로코, 소프트웨어 엔지니어 인턴{duration}",
         duration: "(2024.11 - 2025.02)",
-        tbd: "추가 예정",
+        details: [
+          "머신러닝 데이터 셋 파이프라인 구축과 광고 타깃팅 조건 추가를 위한 First-party 데이터 처리 등 파트너 회사들을 위한 서비스 개발",
+        ],
       },
-      daangn: {
+      karrot: {
         header: "당근, 소프트웨어 엔지니어 인턴 (백엔드){duration}",
         duration: "(2024.08 - 2024.11)",
         details: [
-          "로컬프로필 팀에서 만들어지는 데이터(업체 정보, 리뷰, 쿠폰 등)를 aggregate하여 Elastic Search로 적재하는 서비스 개발",
-          "Elastic Search에 적재한 데이터를 바탕으로 검색 인터페이스를 제공하는 서비스 개발",
-          "기술 : Spring Boot, Kafka, gRPC, MySQL, BigQuery, Kotlin",
+          "여러 서비스로부터 생성되는 데이터를 다른 팀으로 제공하는 컨텐츠 큐레이터 서비스 개발",
+          "Kafka로부터 새롭게 들어오는 데이터 또는 gRPC로부터 누락된 데이터를 관계형 데이터베이스에 저장하고, 이를 기반하여 동작하는 캐시 레이어 개발. 이 최적화를 통해 분당 60-70회의 gRPC 호출이 분당 1회 미만으로 감소",
+          "개발 단계에서 잠재적인 오류를 확인하고 안정성을 개선할 수 있는 통합 테스트 추가",
         ],
       },
     },
-    education: {
+    educations: {
       header: "학력",
       bachelor: {
         header: "숭실대학교 컴퓨터학부{duration}",
-        duration: "(2022.03 - 2025.02 {expect})",
-        graduate_expected: "졸업 예정",
-        grade: "평점 4.32 / 4.50{rank}",
-        rank: "(석차 3/142)",
-        major_gpa: "전공 평점 4.30 / 4.50",
+        duration: "(2022.03 - 2025.02)",
+        grade: "평점 4.29 / 4.50{rank}",
+        rank: "(졸업 석차 2/77)",
+        scholarship: "이공계 국가 우수 장학생{duration}",
+        scholarship_duration: "(2024.11)",
         undergraduate: "숭실대학교 데이터베이스 연구실 학부연구생{duration}",
-        undergraduate_duration: "(2022.03 - )",
+        undergraduate_duration: "(2022.03 - 2025.02)",
         sccc: {
-          header: "컴퓨터학부 문제해결 소모임 SCCC 회장 및 임원{duration}",
-          duration: "(2023.03 - )",
+          header: "컴퓨터학부 문제해결 소모임 SCCC 회장 및 임원",
           study: "알고리즘, 기초 C언어, 논리회로(디지털 공학) 스터디 운영",
           scon: "2023 숭실대학교 프로그래밍 대회 총괄{duration}",
           scon_duration: "(2023.04)",
@@ -59,16 +60,16 @@ export default {
         completed_subject: "대학에서 이수한 주요 과목 목록",
       },
     },
-    experience: {
-      header: "경험",
+    activities: {
+      header: "활동",
       algorithm: {
         header: "알고리즘 대회 참가{duration}",
         duration: "(2019 - )",
         icpc: {
-          icpcwf: "제47회 ICPC World Finals Honorable mention{duration}",
-          icpcwf_duration: "(2024.04, 룩소르, 이집트)",
+          icpcwf: "제47회 ICPC World Finals, Honorable{duration}",
+          icpcwf_duration: "(2024.04, Luxor, Egypt)",
           icpc2022:
-            "2022 ICPC Asia Seoul Regional 은상 (5등, 과학기술정보통신부 장관상){duration}",
+            "2022 ICPC Asia Seoul Regional, 은상 (5등, 과학기술정보통신부 장관상){duration}",
           icpc2022_rank: "",
           icpc2022_duration: "(2022.11)",
         },
@@ -79,7 +80,7 @@ export default {
             "한국정보올림피아드 2024년 1차 대회 프로그래밍 코디네이터{duration}",
           koi2024first_duration: "(2024.05)",
           ioi_camp: "국제정보올림피아드 교육생(계절학교) 코치{duration}",
-          ioi_camp_duration: "(2023.08 - )",
+          ioi_camp_duration: "(2023.08 - 2024.08)",
         },
         koi_award: {
           first_general:
@@ -122,21 +123,23 @@ export default {
         key: "Github",
         value: "nnnlog",
       },
+      linkedin: {
+        key: "LinkedIn",
+        value: "열기",
+      },
       icpc: {
         key: "ICPCID",
         value: "열기",
       },
     },
-    project: {
+    projects: {
       header: "프로젝트",
-      text: "{key}: Javascript/Typescript ({node}, express, {vue}), Flutter, C++ (알고리즘)",
+      text: "{key}: Javascript/Typescript, Flutter, C++",
       key: "주로 사용하는 언어 및 프레임워크",
-      node: "Node.js",
-      vue: "Vue.js",
       link: "모든 프로젝트 보기",
     },
   },
-  activity: {
+  activities: {
     index: {
       header: "활동",
       algorithm: {

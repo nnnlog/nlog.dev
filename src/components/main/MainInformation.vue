@@ -37,6 +37,18 @@
       </div>
     </div>
     <div class="info-row">
+      <div class="info-key">{{ $t("main.information.linkedin.key") }}</div>
+      <div class="info-value">
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/nnnlog/"
+          target="_blank"
+          >{{ $t("main.information.icpc.value") }}
+          <mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
+        </a>
+      </div>
+    </div>
+    <div class="info-row">
       <div class="info-key">{{ $t("main.information.icpc.key") }}</div>
       <div class="info-value">
         <a
