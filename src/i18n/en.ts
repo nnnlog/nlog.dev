@@ -57,7 +57,7 @@ export default {
           header:
             "President & Executives of SCCC, Problem Solving Club in CSE department",
           study:
-            "Operate study for algorithms, basic C language, and logical circuit (digital engineering)",
+            "Operating study for algorithms, basic C language, and logical circuit (digital engineering)",
           scon: "Director of 2023 Soongsil University Programming Contest{duration}",
           scon_duration: "(2023.04)",
           homepage: "SCCC Homepage",
@@ -199,7 +199,7 @@ export default {
           koi1_duration: "(2021.05)",
         },
         contest_univ: {
-          header: "Contests when university",
+          header: "Contests during bachelor",
           ucpc: {
             header: "UCPC",
             description: "(Union of Clubs for Programming Contests)",
@@ -213,7 +213,7 @@ export default {
           },
         },
         contest_high: {
-          header: "Contests when high school",
+          header: "Contests during high school",
           kookmin: {
             header: "Kookmin University Algorithm Contest",
             kmu2021:
@@ -247,10 +247,9 @@ export default {
         scon: {
           header: "SCON{detail}",
           description: "(Soongsil University Programming Contest)",
-          scon2024: "Create problem in 2024 SCON{duration}",
+          scon2024: "Problem setter in 2024 SCON{duration}",
           scon2024_duration: "(2024.05)",
-          scon2023:
-            "Executive Director & Create problem in 2023 SCON{duration}",
+          scon2023: "Director & Problem setter in 2023 SCON{duration}",
           scon2023_duration: "(2023.05)",
         },
       },
@@ -260,7 +259,7 @@ export default {
           header: "KOI Committee{description}",
           description: "(Korea Olympiad in Informatics Committee)",
           ioi_camp: "TA of IOI Training Camp (Summer/Winter School){duration}",
-          ioi_camp_duration: "(2023.08 - , Republic of Korea)",
+          ioi_camp_duration: "(2023.08 - 2024.08, Republic of Korea)",
         },
         sinchon: {
           header: "ICPC Sinchon",

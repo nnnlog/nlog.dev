@@ -245,8 +245,8 @@ export default {
         koi: {
           header: "한국정보올림피아드 위원회{description}",
           description: "",
-          ioi_camp: "국제정보올림피아드 교육생(계절학교) 코치 {duration}",
-          ioi_camp_duration: "(2023.08 - , 대한민국)",
+          ioi_camp: "국제정보올림피아드 교육생(계절학교) 코치{duration}",
+          ioi_camp_duration: "(2023.08 - 2024.08, 대한민국)",
         },
         sinchon: {
           header: "ICPC Sinchon",

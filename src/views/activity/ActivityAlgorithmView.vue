@@ -434,8 +434,8 @@
     <ul>
       <li class="detail semi-bold">
         <a class="link" href="https://koi.or.kr/" target="_blank"
-          >{{ $t("activities.algorithm.lecture.koi.header") }}
-          <mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
+          >{{ $t("activities.algorithm.lecture.koi.header")
+          }}<mdicon class="up" height="1rem" name="open-in-new" width="1rem" />
         </a>
         <span class="detail-value">
           {{ $t("activities.algorithm.lecture.koi.description") }}
