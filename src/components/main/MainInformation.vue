@@ -8,6 +8,12 @@
       <div class="info-value bold">{{ $t("main.information.name.value") }}</div>
     </div>
     <div class="info-row">
+      <div class="info-key">{{ $t("main.information.alt_name.key") }}</div>
+      <div class="info-value bold">
+        {{ $t("main.information.alt_name.value") }}
+      </div>
+    </div>
+    <div class="info-row">
       <div class="info-key">{{ $t("main.information.email.key") }}</div>
       <div class="info-value link bold">
         <a href="mailto:sorisem4106@naver.com" target="_blank">

@@ -106,6 +106,10 @@ export default {
         key: "이름",
         value: "박찬솔",
       },
+      alt_name: {
+        key: "대체 이름",
+        value: "솔린(Solrin)",
+      },
       email: {
         key: "이메일",
         value: "sorisem4106{'@'}naver.com",

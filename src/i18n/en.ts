@@ -113,6 +113,10 @@ export default {
         key: "Name",
         value: "Chansol Park",
       },
+      alt_name: {
+        key: "Alternative Name",
+        value: "Solrin Park",
+      },
       email: {
         key: "Email",
         value: "sorisem4106{'@'}naver.com",
