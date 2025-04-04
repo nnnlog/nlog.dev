@@ -107,7 +107,7 @@ export default {
         value: "박찬솔",
       },
       alt_name: {
-        key: "대체 이름",
+        key: "영어 이름",
         value: "솔린(Solrin)",
       },
       email: {
