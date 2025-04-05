@@ -4,7 +4,7 @@ module.exports = defineConfig({
   pages: {
     index: {
       entry: "src/main.ts",
-      title: "Chansol Park",
+      title: "Solrin Park",
     },
   },
 });

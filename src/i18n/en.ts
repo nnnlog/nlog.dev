@@ -11,7 +11,7 @@ export default {
     project: "Projects",
   },
   intro: {
-    name: "Chansol Park",
+    name: "Solrin",
     description: "Software Engineer",
     word: ["Develop software", "makes world better"],
   },
@@ -111,11 +111,11 @@ export default {
       header: "Information",
       name: {
         key: "Name",
-        value: "Chansol Park",
+        value: "Solrin Park",
       },
       alt_name: {
-        key: "Alternative Name",
-        value: "Solrin Park",
+        key: "Legal Name",
+        value: "Chansol Park",
       },
       email: {
         key: "Email",
