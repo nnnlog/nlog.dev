@@ -22,6 +22,11 @@ export default {
   main: {
     employments: {
       header: "Employments",
+      google: {
+        header: "Google, Software Engineer{duration}",
+        duration: "(2025.04 - )",
+        details: ["Platform & Devices / Pixel Mobile Wireless"],
+      },
       moloco: {
         header: "Moloco, Software Engineer Intern{duration}",
         duration: "(2024.11 - 2025.02)",

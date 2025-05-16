@@ -6,7 +6,28 @@
   </div>
   <i18n-t
     class="sub-header detail"
+    keypath="main.employments.google.header"
+    tag="div"
+  >
+    <template #duration>
+      <span class="detail-value">
+        {{ $t("main.employments.google.duration") }}
+      </span>
+    </template>
+  </i18n-t>
+  <ul>
+    <li
+      v-for="item in $tm('main.employments.google.details')"
+      class="detail"
+      :key="item"
+    >
+      {{ $rt(item) }}
+    </li>
+  </ul>
+  <i18n-t
+    class="sub-header detail"
     keypath="main.employments.moloco.header"
+    style="margin-top: 2rem"
     tag="div"
   >
     <template #duration>

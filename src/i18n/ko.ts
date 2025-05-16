@@ -22,6 +22,11 @@ export default {
   main: {
     employments: {
       header: "경력 사항",
+      google: {
+        header: "구글, 소프트웨어 엔지니어{duration}",
+        duration: "(2025.04 - )",
+        details: ["Platform & Devices / Pixel Mobile Wireless"],
+      },
       moloco: {
         header: "몰로코, 소프트웨어 엔지니어 인턴{duration}",
         duration: "(2024.11 - 2025.02)",
