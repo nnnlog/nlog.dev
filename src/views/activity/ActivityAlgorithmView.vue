@@ -26,7 +26,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activities.algorithm.participate_contest.icpc.icpc2024_duration"
+                    "activities.algorithm.participate_contest.icpc.icpc2024_duration",
                   )
                 }}
               </span>
@@ -44,7 +44,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activities.algorithm.participate_contest.icpc.icpcwf_duration"
+                    "activities.algorithm.participate_contest.icpc.icpcwf_duration",
                   )
                 }}
               </span>
@@ -59,7 +59,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activities.algorithm.participate_contest.icpc.icpc2023_duration"
+                    "activities.algorithm.participate_contest.icpc.icpc2023_duration",
                   )
                 }}
               </span>
@@ -73,7 +73,7 @@
             <template #rank>
               <sup>{{
                 $t(
-                  "activities.algorithm.participate_contest.icpc.icpc2022_rank"
+                  "activities.algorithm.participate_contest.icpc.icpc2022_rank",
                 )
               }}</sup>
             </template>
@@ -81,7 +81,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activities.algorithm.participate_contest.icpc.icpc2022_duration"
+                    "activities.algorithm.participate_contest.icpc.icpc2022_duration",
                   )
                 }}
               </span>
@@ -130,7 +130,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activities.algorithm.participate_contest.koi.koi2_duration"
+                    "activities.algorithm.participate_contest.koi.koi2_duration",
                   )
                 }}
               </span>
@@ -151,7 +151,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activities.algorithm.participate_contest.koi.koi1_duration"
+                    "activities.algorithm.participate_contest.koi.koi1_duration",
                   )
                 }}
               </span>
@@ -168,7 +168,7 @@
             <a class="link" href="https://ucpc.me/" target="_blank">
               {{
                 $t(
-                  "activities.algorithm.participate_contest.contest_univ.ucpc.header"
+                  "activities.algorithm.participate_contest.contest_univ.ucpc.header",
                 )
               }}<mdicon
                 class="up"
@@ -180,7 +180,7 @@
             <span class="detail-value">
               {{
                 $t(
-                  "activities.algorithm.participate_contest.contest_univ.ucpc.description"
+                  "activities.algorithm.participate_contest.contest_univ.ucpc.description",
                 )
               }}
             </span>
@@ -199,7 +199,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2023_duration"
+                        "activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2023_duration",
                       )
                     }}
                   </span>
@@ -217,7 +217,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2022_duration"
+                        "activities.algorithm.participate_contest.contest_univ.ucpc.ucpc2022_duration",
                       )
                     }}
                   </span>
@@ -234,7 +234,7 @@
               <span class="detail-value">
                 {{
                   $t(
-                    "activities.algorithm.participate_contest.contest_univ.ucpc.icn2023_duration"
+                    "activities.algorithm.participate_contest.contest_univ.ucpc.icn2023_duration",
                   )
                 }}
               </span>
@@ -250,7 +250,7 @@
           <li>
             {{
               $t(
-                "activities.algorithm.participate_contest.contest_high.kookmin.header"
+                "activities.algorithm.participate_contest.contest_high.kookmin.header",
               )
             }}
           </li>
@@ -268,7 +268,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activities.algorithm.participate_contest.contest_high.kookmin.kmu2021_duration"
+                        "activities.algorithm.participate_contest.contest_high.kookmin.kmu2021_duration",
                       )
                     }}
                   </span>
@@ -286,7 +286,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activities.algorithm.participate_contest.contest_high.kookmin.kmu2020_duration"
+                        "activities.algorithm.participate_contest.contest_high.kookmin.kmu2020_duration",
                       )
                     }}
                   </span>
@@ -297,7 +297,7 @@
           <li>
             {{
               $t(
-                "activities.algorithm.participate_contest.contest_high.busan.header"
+                "activities.algorithm.participate_contest.contest_high.busan.header",
               )
             }}
           </li>
@@ -312,7 +312,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activities.algorithm.participate_contest.contest_high.busan.busan2021_duration"
+                        "activities.algorithm.participate_contest.contest_high.busan.busan2021_duration",
                       )
                     }}
                   </span>
@@ -327,7 +327,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activities.algorithm.participate_contest.contest_high.busan.busan2020_duration"
+                        "activities.algorithm.participate_contest.contest_high.busan.busan2020_duration",
                       )
                     }}
                   </span>
@@ -342,7 +342,7 @@
                   <span class="detail-value">
                     {{
                       $t(
-                        "activities.algorithm.participate_contest.contest_high.busan.busan2019_duration"
+                        "activities.algorithm.participate_contest.contest_high.busan.busan2019_duration",
                       )
                     }}
                   </span>

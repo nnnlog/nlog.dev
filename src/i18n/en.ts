@@ -25,7 +25,13 @@ export default {
       google: {
         header: "Google, Software Engineer{duration}",
         duration: "(2025.04 - )",
-        details: ["Platform & Devices / Pixel Mobile Wireless"],
+        details: [
+          "Pixel Mobile Wireless",
+          [
+            "Implement NR RF Blocking Test according to 3GPP TS 38.521-1. (Adjacency Channel Selectivity, Narrow band blocking, In-Band blocking)",
+            "Implement lab test automation infrastructure.",
+          ],
+        ],
       },
       moloco: {
         header: "Moloco, Software Engineer Intern{duration}",

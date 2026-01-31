@@ -25,7 +25,13 @@ export default {
       google: {
         header: "구글, 소프트웨어 엔지니어{duration}",
         duration: "(2025.04 - )",
-        details: ["Platform & Devices / Pixel Mobile Wireless"],
+        details: [
+          "Pixel Mobile Wireless",
+          [
+            "3GPP TS 38.521-1에 따른 NR(5G) RF Blocking Test 구현 (Adjacency Channel Selectivity, Narrow band blocking, In-Band blocking)",
+            "랩 테스트 자동화 인프라 구축",
+          ],
+        ],
       },
       moloco: {
         header: "몰로코, 소프트웨어 엔지니어 인턴{duration}",

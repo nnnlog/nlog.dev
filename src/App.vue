@@ -33,7 +33,7 @@ import i18n_ from "@/i18n";
 
 const i18n = i18n_.global;
 type Locales = typeof i18n.locale.value;
-let isLoaded = ref(false);
+const isLoaded = ref(false);
 
 const setLanguage = (lang: Locales) => {
   localStorage.setItem("lang", lang);
@@ -45,7 +45,7 @@ onMounted(() => {
     isLoaded.value = true;
   });
 
-  let language = (localStorage.getItem("lang") ||
+  const language = (localStorage.getItem("lang") ||
     navigator.language) as Locales;
   if (i18n.availableLocales.includes(language)) {
     i18n.locale.value = language;
