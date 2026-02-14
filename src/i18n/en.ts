@@ -82,7 +82,7 @@ export default {
         header: "Participating on Algorithm Contests{duration}",
         duration: "(2019 - )",
         icpc: {
-          icpcwf: "Honorable mention in the 47{th} ICPC World Finals{duration}",
+          icpcwf: "Honorable in the 47{th} ICPC World Finals{duration}",
           icpcwf_duration: "(2024.04, Luxor, Egypt)",
           icpc2022:
             "Silver Award {rank} in the 2022 ICPC Asia Seoul Regional{duration}",
@@ -191,12 +191,12 @@ export default {
           header: "ICPC",
           description: "(International Collegiate Programming Contest)",
           icpc2024:
-            "Honorable mention in the 2024 ICPC Asia Seoul Regional{duration}",
+            "Honorable in the 2024 ICPC Asia Seoul Regional{duration}",
           icpc2024_duration: "(2024.11, Seoul, Republic of Korea)",
-          icpcwf: "Honorable mention in the 47{th} ICPC World Finals{duration}",
+          icpcwf: "Honorable in the 47{th} ICPC World Finals{duration}",
           icpcwf_duration: "(2024.04, Luxor, Egypt)",
           icpc2023:
-            "Honorable mention in the 2023 ICPC Asia Seoul Regional{duration}",
+            "Honorable in the 2023 ICPC Asia Seoul Regional{duration}",
           icpc2023_duration: "(2023.11, Seoul, Republic of Korea)",
           icpc2022:
             "Silver award {rank} in the 2022 ICPC Asia Seoul Regional{duration}",

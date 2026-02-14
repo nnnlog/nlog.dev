@@ -183,11 +183,11 @@ export default {
         icpc: {
           header: "ICPC",
           description: "(국제 대학생 프로그래밍 경시대회)",
-          icpc2024: "2024 ICPC Asia Seoul Regional Honorable mention{duration}",
+          icpc2024: "2024 ICPC Asia Seoul Regional Honorable {duration}",
           icpc2024_duration: "(2024.11)",
-          icpcwf: "제47회 ICPC World Finals Honorable mention{duration}",
+          icpcwf: "제47회 ICPC World Finals Honorable {duration}",
           icpcwf_duration: "(2024.04, 룩소르, 이집트)",
-          icpc2023: "2023 ICPC Asia Seoul Regional Honorable mention{duration}",
+          icpc2023: "2023 ICPC Asia Seoul Regional Honorable {duration}",
           icpc2023_duration: "(2023.11)",
           icpc2022:
             "2022 ICPC Asia Seoul Regional 은상 (5등, 과학기술정보통신부 장관상){duration}",
